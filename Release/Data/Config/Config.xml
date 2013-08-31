@@ -1,0 +1,11 @@
+<!-- EngineConfig gets a shallow copy! never create a child to a child, only a child to root. -->
+
+<Config MainConfig="Test">
+
+<Window Width="800"	Height="600" Title="SEPT 0.01" FrameRate="60" />
+
+<Video FOV="90" />
+
+<Sound VolumeSFX="70" VolumeMusic= "50" />
+
+</Config>
