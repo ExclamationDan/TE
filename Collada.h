@@ -11,18 +11,12 @@ using namespace tinyxml2;
 
 namespace TE
 {
-
-
-
-
+	class RootNode;
+	
 	class Node
 	{
-		//Global scope node Lookup. If it has an ID, it goes here.		
-		//ONLY Root can use m_IdLookup
-		std::vector<std::pair<std::string,Node*>> m_IDLookup;		
-		Node*		m_Root;
-		bool		IsRoot(); 
 	public:
+		RootNode*		m_Root;
 
 		// Technically called attributes, but "keys" makes shorter looking methods
 		struct Key
@@ -50,16 +44,11 @@ namespace TE
 		std::vector<Key>	m_Keys;
 		Node* m_Parent, *m_Next, *m_Prev;
 
-
 		Node();
 		Node(std::string _Name);
 		void Create(std::string _Name = "NULL");
 
-		void					ID_Add(std::string ID,Node* Ptr);
-		Node*					ID_Get(std::string Name);
-		std::pair<bool,Node*>	ID_Find(std::string Name);
-
-		Node* CreateSubNode();
+		Node& CreateSubNode();
 		void AddKey(std::string Name,std::string Value);
 		void AddKey(Key key);
 
@@ -87,6 +76,21 @@ namespace TE
 		void PrintMap();
 	};
 
+
+	class RootNode : public Node
+	{
+	public:
+		//Global scope node Lookup. If it has an ID, it goes here.		
+		//ONLY Root can use m_IdLookup
+		std::vector<std::pair<std::string,Node*>> m_IDLookup;		
+
+		RootNode();
+
+		void					ID_Add(std::string ID,Node* Ptr);
+		Node*					ID_Get(std::string Name);
+		std::pair<bool,Node*>	ID_Find(std::string Name);
+	};
+
 	struct Col_Library_Geometries;
 
 	class Collada
@@ -97,7 +101,7 @@ namespace TE
 		static void ParseKeys(XMLElement* XML, Node* N);
 		static void ParseSibling(XMLElement* XML, Node* Parent);
 
-		static Node Load(std::string Path);
+		static RootNode Load(std::string Path);
 		static Model LoadModel(std::string path);
 		static Col_Library_Geometries Load_LibGeometries(std::string path);
 	};

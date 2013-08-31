@@ -200,3 +200,16 @@
 [Aug|26 - 10:46AM] ID_Get: Could not find ID Box001-UV0
 [Aug|26 - 10:46AM] ID_Get: Could not find ID Box001-lib
 [Aug|26 - 10:46AM] Collada: Loadeded [C:/Users/Danny/Desktop/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:33PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:33PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:35PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:36PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:37PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:37PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:38PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:38PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:40PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:43PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:43PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:44PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.
+[Aug|31 - 05:47PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] successfully.

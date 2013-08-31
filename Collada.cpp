@@ -18,29 +18,16 @@ using namespace std;
 namespace TE
 {
 
-	// |---------- class Node ----------|
-	Node::Node() 
+	// |---------- class RootNode ----------|
+	RootNode::RootNode()
 	{
 		Create();
+
+		m_Root = this;
 	}
-	Node::Node(std::string _Name)
+	std::pair<bool,Node*>	RootNode::ID_Find(std::string Name)
 	{
-		Create(_Name);
-	}
-
-
-	bool Node::IsRoot() {return  (m_Root == (Node*)this) ? true : false; }
-
-
-	std::pair<bool,Node*> Node::ID_Find(std::string Name)
-	{
-		if (!m_Root) 
-		{
-			Utility::Log("Node: m_Root == NULL! Failed to add ID lookup."); 
-			return std::pair<bool,Node*>(false,NULL);
-		}
-		
-		for (auto it : m_Root->m_IDLookup)
+		for (auto it : m_IDLookup)
 		{
 			if( Utility::CompareString(it.first,Name) )
 			{
@@ -48,23 +35,16 @@ namespace TE
 			}
 		}
 		return std::pair<bool,Node*>(false,NULL);
-
-
 	}
-	void	Node::ID_Add(std::string Name, Node* Ptr)
+	void					RootNode::ID_Add(std::string Name, Node* Ptr)
 	{
-		if (!m_Root)
-		{
-			Utility::Log("Node: m_Root == NULL! Failed to add ID lookup.");
-			return;
-		}
 		if (ID_Find(Name).first)
 		{
 			Utility::Log("[WARNING] (Node::ID_Add) m_IDLookup already contains ID "+Name);
 		}
-		m_Root->m_IDLookup.push_back(std::pair<std::string,Node*>(Name,Ptr));
+		m_IDLookup.push_back(std::pair<std::string,Node*>(Name,Ptr));
 	}
-	Node*	Node::ID_Get(std::string Name)
+	Node*					RootNode::ID_Get(std::string Name)
 	{
 		if (!m_Root)
 		{
@@ -85,6 +65,18 @@ namespace TE
 	}
 
 
+
+	// |---------- class Node ----------|
+	Node::Node() 
+	{
+		Create();
+	}
+	Node::Node(std::string _Name)
+	{
+		Create(_Name);
+	}
+
+
 	void Node::Create(std::string _Name)
 	{
 		m_Name = _Name;
@@ -94,19 +86,11 @@ namespace TE
 		m_Parent = NULL;
 		m_Next = NULL;
 		m_Prev = NULL;
-
 		m_Root = NULL;
 	}
 
-	Node* Node::CreateSubNode()
+	Node& Node::CreateSubNode()
 	{
-		// If I have no root node, I become the root node.
-		// My babies gotta eat.
-		if (m_Root == NULL)
-		{
-			m_Root = this;
-		}
-
 		Node *SecondLast = NULL;
 		if(m_Nodes.size() > 0)
 		{
@@ -114,15 +98,15 @@ namespace TE
 		}
 
 		m_Nodes.push_back(Node());
-		Node *RequestedNode = &m_Nodes.back();
-		RequestedNode->m_Parent = this;
-		RequestedNode->m_Next = NULL;
-		RequestedNode->m_Root = m_Root;
+		Node &RequestedNode = m_Nodes.back();
+		RequestedNode.m_Parent = this;
+		RequestedNode.m_Next = NULL;
+		RequestedNode.m_Root = m_Root;
 
 		if (SecondLast != NULL)
 		{
-			SecondLast->m_Next = RequestedNode;
-			RequestedNode->m_Prev = SecondLast;
+			SecondLast->m_Next = &RequestedNode;
+			RequestedNode.m_Prev = SecondLast;
 		}
 
 		return RequestedNode;
@@ -276,21 +260,21 @@ namespace TE
 			N->m_Name = (char*) XML->Name();
 			while (Attrib != NULL)
 			{
-				
+
 				Node::Key TempKey((char*)Attrib->Name(),(char*)Attrib->Value());
 
 
 				if( Utility::CompareString(Attrib->Name(),"id"))
 				{
 					// Add to master ID lookup table.
-					N->ID_Add(Attrib->Value(),N);
+					N->m_Root->ID_Add(Attrib->Value(),N);
 				}
 				else if ( Utility::CompareString(Attrib->Name(),"source") || Utility::CompareString(Attrib->Name(),"url"))
 				{
 					// Remove '#' symbol.
 					std::string Str = Attrib->Value();
 					Str = Str.erase(0,1);
-					TempKey.m_ptr = N->ID_Get(Str);
+					TempKey.m_ptr = N->m_Root->ID_Get(Str);
 				}
 
 				N->AddKey(TempKey);
@@ -306,7 +290,7 @@ namespace TE
 
 			while(XML != NULL)
 			{
-				Node *N = Parent->CreateSubNode();
+				Node *N = &Parent->CreateSubNode();
 				ParseKeys(XML,N);
 				ParseSibling(XML,N);
 
@@ -317,7 +301,7 @@ namespace TE
 
 	}
 
-	Node Collada::Load(std::string Path)
+	RootNode Collada::Load(std::string Path)
 	{
 		XMLDocument Doc;
 		if (Doc.LoadFile(Path.c_str()) == XML_SUCCESS)
@@ -331,7 +315,7 @@ namespace TE
 
 		XMLElement *XMLMain = Doc.RootElement();
 
-		Node Root;
+		RootNode Root;
 		ParseKeys(XMLMain,&Root);
 		ParseSibling(XMLMain,&Root);
 
@@ -445,7 +429,7 @@ namespace TE
 	Col_Library_Geometries Collada::Load_LibGeometries(std::string path)
 	{
 
-		Node Root		= Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
+		RootNode Root		= Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
 		Node *N_LibGeo	= Root.GetAnyNode("library_geometries");
 		Col_Library_Geometries C_LibGeo;
 
@@ -476,8 +460,8 @@ namespace TE
 					N_Source = N_Source->GetSimilar();
 				}
 
-				
-				
+
+
 				Node* N_Vert = N_Mesh->GetNode("vertices");
 				if (N_Vert != NULL)
 				{
