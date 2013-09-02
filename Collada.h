@@ -9,153 +9,98 @@
 #include "TinyXML\tinyxml2.h"
 using namespace tinyxml2;
 
+
 namespace TE
 {
-	class RootNode;
-	
-	class Node
-	{
-	public:
-		RootNode*		m_Root;
 
-		// Technically called attributes, but "keys" makes shorter looking methods
-		struct Key
+		class Collada_Loader;
+
+		class Collada_Node
 		{
-			std::string m_Name;
-			std::string m_Value;
-			Node* m_ptr;
+		public:
+			Collada_Loader*		m_Root;
 
-			Key()
+			// Technically called attributes, but "keys" makes shorter looking methods
+			struct Key
 			{
-				m_Name = "NULL";
-				m_Value = "NULL";
-				m_ptr = NULL;
-			}
-			Key(std::string _Name,std::string _Value)
-			{
-				m_Name = _Name;
-				m_Value = _Value;
-				m_ptr = NULL;
-			}
-		};	
+				std::string m_Name;
+				std::string m_Value;
+				Collada_Node* m_ptr;
 
-		std::string			m_Name;
-		std::list<Node>		m_Nodes;
-		std::vector<Key>	m_Keys;
-		Node* m_Parent, *m_Next, *m_Prev;
+				Key()
+				{
+					m_Name = "NULL";
+					m_Value = "NULL";
+					m_ptr = NULL;
+				}
+				Key(std::string _Name,std::string _Value)
+				{
+					m_Name = _Name;
+					m_Value = _Value;
+					m_ptr = NULL;
+				}
+			};	
 
-		Node();
-		Node(std::string _Name);
-		void Create(std::string _Name = "NULL");
+			std::string			m_Name;
+			std::list<Collada_Node>		m_Nodes;
+			std::vector<Key>	m_Keys;
+			Collada_Node* m_Parent, *m_Next, *m_Prev;
 
-		Node& CreateSubNode();
-		void AddKey(std::string Name,std::string Value);
-		void AddKey(Key key);
+			Collada_Node();
+			Collada_Node(std::string _Name);
+			void Create(std::string _Name = "NULL");
 
-
-		// Recursively parse all node children for matching name
-		Node* GetAnyNode(std::string Name, bool Subprocess = false);
-
-		// Recursively parse all node children keys and self
-		Key* GetAnyKey(std::string Name, bool Subprocess = false);
-
-
-		// Parse only immediate child nodes for matching name
-		Node* GetNode(std::string Name);
-
-		// Parse only immediate node children keys and self
-		Key* GetKey(std::string Name);
-
-		// Iterate Node->Next pointers until a node with a matching name is found.
-		Node* GetSimilar();
-
-		void MapKeys();
-		void MapNodes();
-
-		// Print a list of child nodes and attributes (keys)
-		void PrintMap();
-	};
+			Collada_Node& CreateSubNode();
+			void AddKey(std::string Name,std::string Value);
+			void AddKey(Key key);
 
 
-	class RootNode : public Node
-	{
-	public:
-		//Global scope node Lookup. If it has an ID, it goes here.		
-		//ONLY Root can use m_IdLookup
-		std::vector<std::pair<std::string,Node*>> m_IDLookup;		
+			// Recursively parse all node children for matching name
+			Collada_Node* GetAnyNode(std::string Name, bool Subprocess = false);
 
-		RootNode();
-
-		void					ID_Add(std::string ID,Node* Ptr);
-		Node*					ID_Get(std::string Name);
-		std::pair<bool,Node*>	ID_Find(std::string Name);
-	};
-
-	struct Col_Library_Geometries;
-
-	class Collada
-	{
-	public:	
-		Collada(void);
-
-		static void ParseKeys(XMLElement* XML, Node* N);
-		static void ParseSibling(XMLElement* XML, Node* Parent);
-
-		static RootNode Load(std::string Path);
-		static Model LoadModel(std::string path);
-		static Col_Library_Geometries Load_LibGeometries(std::string path);
-	};
+			// Recursively parse all node children keys and self
+			Key* GetAnyKey(std::string Name, bool Subprocess = false);
 
 
-	struct Col_Source
-	{
-		enum Type {Position = 0, Normal, Texcoord};
+			// Parse only immediate child nodes for matching name
+			Collada_Node* GetNode(std::string Name);
 
-		Type			m_Type;
-		std::string		m_Data;
-		std::string		m_Id;
-		unsigned  int	m_Stride;	
-	};
+			// Parse only immediate node children keys and self
+			Key* GetKey(std::string Name);
+
+			// Iterate Node->Next pointers until a node with a matching name as this->m_Name is found.
+			Collada_Node* GetSimilar();
+
+			void MapKeys();
+			void MapNodes();
+
+			// Print a list of child nodes and attributes (keys)
+			void PrintMap();
+		};
+
+		class Collada_Loader : public Collada_Node
+		{
+		public:		
+
+
+			//Global scope node Lookup. If it has an ID, it goes here.
+			std::vector<std::pair<std::string,Collada_Node*>> m_IDLookup;		
+
+			void					ID_Add(std::string ID,Collada_Node* Ptr);
+			Collada_Node*					ID_Get(std::string Name);
+			std::pair<bool,Collada_Node*>	ID_Find(std::string Name);
+
+
+			Collada_Loader(void);
+
+			static void ParseKeys(XMLElement* XML, Collada_Node* N);
+			static void ParseSibling(XMLElement* XML, Collada_Node* Parent);
+
+			void Load(std::string Path);
+			Model LoadModel(std::string path);
+
+		};
+}
 
 
 
-	struct Col_Input
-	{
-		std::string m_Semantic,m_Offset, m_SourceID; // Remember to strip '#' from front of m_sourceID name
-	};
-
-	struct Col_Vertices
-	{
-		std::string	m_id;
-		Col_Input	m_input;
-	};
-
-	struct Col_Triangles
-	{
-		unsigned int			m_Count;
-		std::vector<Col_Input>	m_Input;
-		std::vector<GLushort>	m_P;
-	};
-
-
-	struct Col_Mesh
-	{
-		std::vector<Col_Source> m_Source;
-		std::vector<Col_Triangles> m_Triangles;
-		Col_Vertices m_Vertices;
-	};
-
-
-	struct Col_Geometry
-	{
-		std::string m_Id,m_Name;
-		std::vector<Col_Mesh> m_Mesh;
-	};
-
-
-	struct Col_Library_Geometries
-	{
-		std::vector<Col_Geometry> m_Geometry;
-	};
-
-};

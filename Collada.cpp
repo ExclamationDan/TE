@@ -13,75 +13,26 @@
 
 using namespace std;
 
-
-
 namespace TE
-{
-
-	// |---------- class RootNode ----------|
-	RootNode::RootNode()
-	{
-		Create();
-
-		m_Root = this;
-	}
-	std::pair<bool,Node*>	RootNode::ID_Find(std::string Name)
-	{
-		for (auto it : m_IDLookup)
-		{
-			if( Utility::CompareString(it.first,Name) )
-			{
-				return std::pair<bool,Node*>(true,it.second);
-			}
-		}
-		return std::pair<bool,Node*>(false,NULL);
-	}
-	void					RootNode::ID_Add(std::string Name, Node* Ptr)
-	{
-		if (ID_Find(Name).first)
-		{
-			Utility::Log("[WARNING] (Node::ID_Add) m_IDLookup already contains ID "+Name);
-		}
-		m_IDLookup.push_back(std::pair<std::string,Node*>(Name,Ptr));
-	}
-	Node*					RootNode::ID_Get(std::string Name)
-	{
-		if (!m_Root)
-		{
-			Utility::Log("Node: m_Root == NULL! Failed to add ID lookup.");
-			return NULL;
-		}
-
-		std::pair<bool,Node*> Find  = ID_Find(Name);
-		if (Find.first)
-		{
-			return Find.second;
-		}
-		else
-		{
-			Utility::Log("ID_Get: Could not find ID "+Name);
-			return NULL;
-		}
-	}
-
+{	
 
 
 	// |---------- class Node ----------|
-	Node::Node() 
+	Collada_Node::Collada_Node() 
 	{
 		Create();
 	}
-	Node::Node(std::string _Name)
+	Collada_Node::Collada_Node(std::string _Name)
 	{
 		Create(_Name);
 	}
 
 
-	void Node::Create(std::string _Name)
+	void Collada_Node::Create(std::string _Name)
 	{
 		m_Name = _Name;
 		m_Parent = NULL;
-		m_Nodes = std::list<Node>(0);
+		m_Nodes = std::list<Collada_Node>(0);
 		m_Keys = std::vector<Key>(0);
 		m_Parent = NULL;
 		m_Next = NULL;
@@ -89,16 +40,16 @@ namespace TE
 		m_Root = NULL;
 	}
 
-	Node& Node::CreateSubNode()
+	Collada_Node& Collada_Node::CreateSubNode()
 	{
-		Node *SecondLast = NULL;
+		Collada_Node *SecondLast = NULL;
 		if(m_Nodes.size() > 0)
 		{
 			SecondLast = &m_Nodes.back();
 		}
 
-		m_Nodes.push_back(Node());
-		Node &RequestedNode = m_Nodes.back();
+		m_Nodes.push_back(Collada_Node());
+		Collada_Node &RequestedNode = m_Nodes.back();
 		RequestedNode.m_Parent = this;
 		RequestedNode.m_Next = NULL;
 		RequestedNode.m_Root = m_Root;
@@ -112,16 +63,16 @@ namespace TE
 		return RequestedNode;
 	}
 
-	void Node::AddKey(std::string Name,std::string Value)
+	void Collada_Node::AddKey(std::string Name,std::string Value)
 	{
 		m_Keys.push_back(Key(Name,Value));
 	}
-	void Node::AddKey(Key key)
+	void Collada_Node::AddKey(Key key)
 	{
 		m_Keys.push_back(key);
 	}
 
-	Node* Node::GetNode(std::string Name)
+	Collada_Node* Collada_Node::GetNode(std::string Name)
 	{
 		for (auto it = m_Nodes.begin();it != m_Nodes.end();it++)
 		{
@@ -133,7 +84,7 @@ namespace TE
 		Utility::Log("Node: Query Failed, no immediate nodes named "+Name);
 		return NULL;
 	}
-	Node* Node::GetAnyNode(std::string Name, bool Subprocess)
+	Collada_Node* Collada_Node::GetAnyNode(std::string Name, bool Subprocess)
 	{
 		for (auto it = m_Nodes.begin();it != m_Nodes.end();it++)
 		{
@@ -143,7 +94,7 @@ namespace TE
 			}
 
 
-			Node* Find = it->GetAnyNode(Name,true);
+			Collada_Node* Find = it->GetAnyNode(Name,true);
 			if (Find != NULL)
 			{
 				return Find;
@@ -157,9 +108,9 @@ namespace TE
 		}
 		return NULL;
 	}
-	Node* Node::GetSimilar()
+	Collada_Node* Collada_Node::GetSimilar()
 	{
-		Node *N = m_Next;
+		Collada_Node *N = m_Next;
 		while (N != NULL)
 		{
 			if (Utility::CompareString(N->m_Name,m_Name))
@@ -169,9 +120,10 @@ namespace TE
 			N = N->m_Next;
 		}
 		return NULL;
+
 	}
 
-	Node::Key* Node::GetKey(std::string Name)
+	Collada_Node::Key* Collada_Node::GetKey(std::string Name)
 	{
 		for (auto it = m_Keys.begin();it != m_Keys.end();it++)
 		{
@@ -183,7 +135,7 @@ namespace TE
 		std::cout << "GetKey: Attribute Query Failed: could not find " << Name.c_str() << " within " << this->m_Name <<"\n";
 		return NULL;
 	}
-	Node::Key* Node::GetAnyKey(std::string Name, bool Subprocess)
+	Collada_Node::Key* Collada_Node::GetAnyKey(std::string Name, bool Subprocess)
 	{
 		for (auto it = m_Nodes.begin();it != m_Nodes.end();it++)
 		{				
@@ -212,7 +164,7 @@ namespace TE
 
 
 
-	void Node::MapKeys()
+	void Collada_Node::MapKeys()
 	{
 		for ( auto it = m_Keys.begin(); it != m_Keys.end(); it++)
 		{
@@ -220,7 +172,7 @@ namespace TE
 			std::cout << "Value: "<< it->m_Value << std::endl;
 		}
 	}
-	void Node::MapNodes()
+	void Collada_Node::MapNodes()
 	{
 		for ( auto it = m_Nodes.begin(); it != m_Nodes.end(); it++)
 		{
@@ -232,7 +184,7 @@ namespace TE
 			std::cout <<"\n";
 		}
 	}
-	void Node::PrintMap()
+	void Collada_Node::PrintMap()
 	{
 		std::cout << "---Start Node---\n"<< "Name: " << m_Name << std::endl;
 		MapKeys();
@@ -242,12 +194,56 @@ namespace TE
 
 
 
-	// |---------- class Collada ----------|
-	Collada::Collada(void) {}
-
-	void Collada::ParseKeys(XMLElement* XML, Node* N)
+	// |---------- class Collada_Loader ----------|
+	Collada_Loader::Collada_Loader(void) 
 	{		
+		Create();
 
+		m_Root = this;
+	}
+
+	std::pair<bool,Collada_Node*>	Collada_Loader::ID_Find(std::string Name)
+	{
+		for (auto it : m_IDLookup)
+		{
+			if( Utility::CompareString(it.first,Name) )
+			{
+				return std::pair<bool,Collada_Node*>(true,it.second);
+			}
+		}
+		return std::pair<bool,Collada_Node*>(false,NULL);
+	}
+	void							Collada_Loader::ID_Add(std::string Name, Collada_Node* Ptr)
+	{
+		if (ID_Find(Name).first)
+		{
+			Utility::Log("[WARNING] (Node::ID_Add) m_IDLookup already contains ID "+Name);
+		}
+		m_IDLookup.push_back(std::pair<std::string,Collada_Node*>(Name,Ptr));
+	}
+	Collada_Node*					Collada_Loader::ID_Get(std::string Name)
+	{
+		if (!m_Root)
+		{
+			Utility::Log("Node: m_Root == NULL! Failed to add ID lookup.");
+			return NULL;
+		}
+
+		std::pair<bool,Collada_Node*> Find  = ID_Find(Name);
+		if (Find.first)
+		{
+			return Find.second;
+		}
+		else
+		{
+			Utility::Log("ID_Get: Could not find ID "+Name);
+			return NULL;
+		}
+	}
+
+
+	void Collada_Loader::ParseKeys(XMLElement* XML, Collada_Node* N)
+	{		
 		if (XML != NULL)
 		{
 			if (XML->GetText() != NULL)
@@ -261,8 +257,7 @@ namespace TE
 			while (Attrib != NULL)
 			{
 
-				Node::Key TempKey((char*)Attrib->Name(),(char*)Attrib->Value());
-
+				Collada_Node::Key TempKey((char*)Attrib->Name(),(char*)Attrib->Value());
 
 				if( Utility::CompareString(Attrib->Name(),"id"))
 				{
@@ -274,15 +269,15 @@ namespace TE
 					// Remove '#' symbol.
 					std::string Str = Attrib->Value();
 					Str = Str.erase(0,1);
+					TempKey.m_Value = Str;
 					TempKey.m_ptr = N->m_Root->ID_Get(Str);
 				}
-
 				N->AddKey(TempKey);
 				Attrib = (tinyxml2::XMLAttribute*) Attrib->Next();
 			}
 		}
 	}
-	void Collada::ParseSibling(XMLElement* XML, Node* Parent)
+	void Collada_Loader::ParseSibling(XMLElement* XML, Collada_Node* Parent)
 	{
 		if (XML != NULL)
 		{
@@ -290,7 +285,7 @@ namespace TE
 
 			while(XML != NULL)
 			{
-				Node *N = &Parent->CreateSubNode();
+				Collada_Node *N = &Parent->CreateSubNode();
 				ParseKeys(XML,N);
 				ParseSibling(XML,N);
 
@@ -301,223 +296,234 @@ namespace TE
 
 	}
 
-	RootNode Collada::Load(std::string Path)
+
+	void Collada_Loader::Load(std::string Path)
 	{
 		XMLDocument Doc;
+		Path = Engine.Resource->AliasAdd(Path::Models,Path);
 		if (Doc.LoadFile(Path.c_str()) == XML_SUCCESS)
 		{
-			Utility::Log("Collada: Loadeded ["+Path+"] successfully.");
+			Utility::Log("Collada: Loadeded ["+Path+"] for parsing successfully.");
 		}
 		else
 		{
 			Utility::Log("Collada: Failed to open file ["+Path+"]");
+			return;
 		}
 
 		XMLElement *XMLMain = Doc.RootElement();
 
-		RootNode Root;
-		ParseKeys(XMLMain,&Root);
-		ParseSibling(XMLMain,&Root);
+		ParseKeys(XMLMain,this);
+		ParseSibling(XMLMain,this);
 
 
-		//Root.PrintMap();
+		PrintMap();
 
-		return Root;
+		//return Root;
 	}
 
+	Model Collada_Loader::LoadModel(std::string Path)
+	{
+		Utility::Log("Collada_Loader: LoadModel() - Used unfinished method! Returning Model()");
+		return Model();
+	}
+	/*
 	std::vector<glm::vec3> Vectorize_Tokens(const char* Text,bool _3D = true)
 	{
-		std::vector<glm::vec3>	ReturnVector;
-		std::vector<GLfloat>	Vec  = Utility::Vector_SplitString<GLfloat>((char *)Text);
+	std::vector<glm::vec3>	ReturnVector;
+	std::vector<GLfloat>	Vec  = Utility::Vector_SplitString<GLfloat>((char *)Text);
 
 
-		for (size_t Verticies = 0; Verticies < Vec.size()/3; Verticies++)
-		{
-			if (_3D)
-			{
-				ReturnVector.push_back(glm::vec3(Vec[Verticies*3],Vec[Verticies*3+1],Vec[Verticies*3+2]));
-			}
-			else
-			{
-				glm::vec3 V;
-				V.s = Vec[Verticies*2];
-				V.t = Vec[(Verticies*2)+1];
-				ReturnVector.push_back(V);
-			}
-		}
-
-		std::cout << "Printing Complete Vector Data...\n\n";
-		for (auto it : ReturnVector)
-		{
-			if (_3D)
-			{
-				std::cout << it.x << ","<<it.y<<","<<it.z<<"\n";
-			}
-			else
-			{
-				std::cout << it.s << ","<<it.t <<"\n";
-			}
-		}
-		std::cout << "\nComplete Vector Data. Print Complete.\n\n";
-
-		return ReturnVector;
+	for (size_t Verticies = 0; Verticies < Vec.size()/3; Verticies++)
+	{
+	if (_3D)
+	{
+	ReturnVector.push_back(glm::vec3(Vec[Verticies*3],Vec[Verticies*3+1],Vec[Verticies*3+2]));
+	}
+	else
+	{
+	glm::vec3 V;
+	V.s = Vec[Verticies*2];
+	V.t = Vec[(Verticies*2)+1];
+	ReturnVector.push_back(V);
+	}
 	}
 
+	std::cout << "Printing Complete Vector Data...\n\n";
+	for (auto it : ReturnVector)
+	{
+	if (_3D)
+	{
+	std::cout << it.x << ","<<it.y<<","<<it.z<<"\n";
+	}
+	else
+	{
+	std::cout << it.s << ","<<it.t <<"\n";
+	}
+	}
+	std::cout << "\nComplete Vector Data. Print Complete.\n\n";
+
+	return ReturnVector;
+	}
+	*/
+
+	/*
 	Model Collada::LoadModel(string path)
 	{
 
-		Col_Library_Geometries C_LibGeo = Collada::Load_LibGeometries(Engine.Resource->AliasAdd(Path::Models,path));
+	Col_Library_Geometries C_LibGeo = Collada::Load_LibGeometries(Engine.Resource->AliasAdd(Path::Models,path));
 
-		Node Root = Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
-		Model ReturnModel;
+	Node Root = Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
+	Model ReturnModel;
 
-		Mesh M;	
-		Node *Source = Root.GetAnyNode("source");
+	Mesh M;	
+	Node *Source = Root.GetAnyNode("source");
 
-		// Position, Normal, Texcoord = PMT
-		std::vector<glm::vec3> PNT[3];
-
-
-		for (int i = 0;i<3;i++)
-		{
-			if (i == 2)
-			{
-				PNT[i]  = Vectorize_Tokens(Source->GetAnyKey("text")->m_Value.c_str(),false);
-			}
-			else
-			{
-				PNT[i]  = Vectorize_Tokens(Source->GetAnyKey("text")->m_Value.c_str());
-			}
-			Source = Source->m_Next;
-		}
-
-		vector<GLushort> Index = Utility::Vector_SplitString<GLushort>((char *)Root.GetAnyNode("triangles")->GetAnyNode("p")->GetKey("text")->m_Value.c_str());;
+	// Position, Normal, Texcoord = PMT
+	std::vector<glm::vec3> PNT[3];
 
 
-		std::vector<glm::vec3> Expanded_Vertex;
+	for (int i = 0;i<3;i++)
+	{
+	if (i == 2)
+	{
+	PNT[i]  = Vectorize_Tokens(Source->GetAnyKey("text")->m_Value.c_str(),false);
+	}
+	else
+	{
+	PNT[i]  = Vectorize_Tokens(Source->GetAnyKey("text")->m_Value.c_str());
+	}
+	Source = Source->m_Next;
+	}
+
+	vector<GLushort> Index = Utility::Vector_SplitString<GLushort>((char *)Root.GetAnyNode("triangles")->GetAnyNode("p")->GetKey("text")->m_Value.c_str());;
 
 
-		for (unsigned int i = 0; i < Index.size()/3; i++)
-		{
+	std::vector<glm::vec3> Expanded_Vertex;
 
 
-			glm::vec3 ExpandedVert	= PNT[0][Index[i*3]];
-			glm::vec3 Norm			= PNT[1][Index[i*3+1]];
-			glm::vec3 Tex			= PNT[1][Index[i*3+1]];
-
-			ExpandedVert.r = Norm.x;
-			ExpandedVert.g = Norm.y;
-			ExpandedVert.b = Norm.z;
-
-			ExpandedVert.s = Tex.s;
-			ExpandedVert.t = Tex.t;
+	for (unsigned int i = 0; i < Index.size()/3; i++)
+	{
 
 
-			Expanded_Vertex.push_back(ExpandedVert);
+	glm::vec3 ExpandedVert	= PNT[0][Index[i*3]];
+	glm::vec3 Norm			= PNT[1][Index[i*3+1]];
+	glm::vec3 Tex			= PNT[1][Index[i*3+1]];
 
-		}
+	ExpandedVert.r = Norm.x;
+	ExpandedVert.g = Norm.y;
+	ExpandedVert.b = Norm.z;
+
+	ExpandedVert.s = Tex.s;
+	ExpandedVert.t = Tex.t;
 
 
-		ReturnModel.m_Mesh.push_back(M);
-		return ReturnModel;
+	Expanded_Vertex.push_back(ExpandedVert);
 
 	}
 
 
+	ReturnModel.m_Mesh.push_back(M);
+	return ReturnModel;
 
+	}
 
+	*/
+
+	/*
 	Col_Library_Geometries Collada::Load_LibGeometries(std::string path)
 	{
 
-		RootNode Root		= Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
-		Node *N_LibGeo	= Root.GetAnyNode("library_geometries");
-		Col_Library_Geometries C_LibGeo;
+	RootNode Root		= Collada::Load(Engine.Resource->AliasAdd(Path::Models,path));
+	Node *N_LibGeo	= Root.GetAnyNode("library_geometries");
+	Col_Library_Geometries C_LibGeo;
 
-		//Step into Geometry
-		Node* N_Geometry = N_LibGeo->GetNode("geometry");
-		while(N_Geometry != NULL)
-		{
-			Col_Geometry C_Geometry;
-			C_Geometry.m_Id		= N_Geometry->GetKey("id")->m_Value;
-			C_Geometry.m_Name	= N_Geometry->GetAnyKey("name")->m_Value;
+	//Step into Geometry
+	Node* N_Geometry = N_LibGeo->GetNode("geometry");
+	while(N_Geometry != NULL)
+	{
+	Col_Geometry C_Geometry;
+	C_Geometry.m_Id		= N_Geometry->GetKey("id")->m_Value;
+	C_Geometry.m_Name	= N_Geometry->GetAnyKey("name")->m_Value;
 
-			//Step into Mesh
-			Node *N_Mesh		= N_Geometry->GetNode("mesh");
-			while (N_Mesh != NULL)
-			{
-				Col_Mesh C_Mesh;
+	//Step into Mesh
+	Node *N_Mesh		= N_Geometry->GetNode("mesh");
+	while (N_Mesh != NULL)
+	{
+	Col_Mesh C_Mesh;
 
-				//Step into Source
-				Node* N_Source = N_Mesh->GetNode("source");
-				while(N_Source != NULL)
-				{
-					Col_Source C_Source;
-					C_Source.m_Id		= N_Source->GetKey("id")->m_Value;
-					C_Source.m_Data		= N_Source->GetNode("float_array")->GetKey("text")->m_Value;
-					C_Source.m_Stride	= Utility::ToUInt(N_Source->GetNode("technique_common")->GetNode("accessor")->GetKey("stride")->m_Value);
+	//Step into Source
+	Node* N_Source = N_Mesh->GetNode("source");
+	while(N_Source != NULL)
+	{
+	Col_Source C_Source;
+	C_Source.m_Id		= N_Source->GetKey("id")->m_Value;
+	C_Source.m_Data		= N_Source->GetNode("float_array")->GetKey("text")->m_Value;
+	C_Source.m_Stride	= Utility::ToUInt(N_Source->GetNode("technique_common")->GetNode("accessor")->GetKey("stride")->m_Value);
 
-					C_Mesh.m_Source.push_back(C_Source);
-					N_Source = N_Source->GetSimilar();
-				}
-
-
-
-				Node* N_Vert = N_Mesh->GetNode("vertices");
-				if (N_Vert != NULL)
-				{
-					Col_Vertices C_Vert;
-					C_Vert.m_id = N_Vert->GetKey("id")->m_Value;
-
-					Node* N_Input = N_Vert->GetNode("input");
-					C_Vert.m_input.m_Semantic = N_Input->GetKey("semantic")->m_Value;
-					C_Vert.m_input.m_SourceID = N_Input->GetKey("source")->m_Value;
-					C_Mesh.m_Vertices = C_Vert;
-				}
-				else
-				{
-					Utility::Log("Collada::Load: Failed to load vertices into C_Mesh!!!");
-				}
-
-				//Step into Triangle
-				Node *N_Triangles = N_Mesh->GetNode("triangles");
-				while (N_Triangles != NULL)
-				{
-					Col_Triangles C_Triangle;
-					C_Triangle.m_Count = Utility::ToUInt(N_Triangles->GetKey("count")->m_Name);
+	C_Mesh.m_Source.push_back(C_Source);
+	N_Source = N_Source->GetSimilar();
+	}
 
 
-					Node* N_Input = N_Triangles->GetNode("input");
-					while(N_Input != NULL)
-					{
-						Col_Input C_Input;
 
-						C_Input.m_Semantic	= N_Input->GetKey("semantic")->m_Value;
-						C_Input.m_Offset	= Utility::ToUInt(N_Input->GetKey("offset")->m_Value);
-						C_Input.m_SourceID	= N_Input->GetKey("source")->m_Value.erase(0,1);
-						std::cout <<"Input SourceID: "<< C_Input.m_SourceID << "\n";
+	Node* N_Vert = N_Mesh->GetNode("vertices");
+	if (N_Vert != NULL)
+	{
+	Col_Vertices C_Vert;
+	C_Vert.m_id = N_Vert->GetKey("id")->m_Value;
 
-						C_Triangle.m_Input.push_back(C_Input);
-						N_Input = N_Input->GetSimilar();
-					}
+	Node* N_Input = N_Vert->GetNode("input");
+	C_Vert.m_input.m_Semantic = N_Input->GetKey("semantic")->m_Value;
+	C_Vert.m_input.m_SourceID = N_Input->GetKey("source")->m_Value;
+	C_Mesh.m_Vertices = C_Vert;
+	}
+	else
+	{
+	Utility::Log("Collada::Load: Failed to load vertices into C_Mesh!!!");
+	}
 
-					C_Triangle.m_P = Utility::Vector_SplitString<GLushort>((char*) N_Triangles->GetNode("p")->GetKey("text")->m_Value.c_str());
-					C_Mesh.m_Triangles.push_back(C_Triangle);
-
-					N_Triangles = N_Triangles->GetSimilar();
-				}
-
-				C_Geometry.m_Mesh.push_back(C_Mesh);
-
-				N_Mesh = N_Mesh->GetSimilar();
-			}
-
-			C_LibGeo.m_Geometry.push_back(C_Geometry);
-			N_Geometry = N_Geometry->GetSimilar();
-		}
+	//Step into Triangle
+	Node *N_Triangles = N_Mesh->GetNode("triangles");
+	while (N_Triangles != NULL)
+	{
+	Col_Triangles C_Triangle;
+	C_Triangle.m_Count = Utility::ToUInt(N_Triangles->GetKey("count")->m_Name);
 
 
-		return C_LibGeo;
+	Node* N_Input = N_Triangles->GetNode("input");
+	while(N_Input != NULL)
+	{
+	Col_Input C_Input;
+
+	C_Input.m_Semantic	= N_Input->GetKey("semantic")->m_Value;
+	C_Input.m_Offset	= Utility::ToUInt(N_Input->GetKey("offset")->m_Value);
+	C_Input.m_SourceID	= N_Input->GetKey("source")->m_Value.erase(0,1);
+	std::cout <<"Input SourceID: "<< C_Input.m_SourceID << "\n";
+
+	C_Triangle.m_Input.push_back(C_Input);
+	N_Input = N_Input->GetSimilar();
+	}
+
+	C_Triangle.m_P = Utility::Vector_SplitString<GLushort>((char*) N_Triangles->GetNode("p")->GetKey("text")->m_Value.c_str());
+	C_Mesh.m_Triangles.push_back(C_Triangle);
+
+	N_Triangles = N_Triangles->GetSimilar();
+	}
+
+	C_Geometry.m_Mesh.push_back(C_Mesh);
+
+	N_Mesh = N_Mesh->GetSimilar();
+	}
+
+	C_LibGeo.m_Geometry.push_back(C_Geometry);
+	N_Geometry = N_Geometry->GetSimilar();
+	}
+
+
+	return C_LibGeo;
 
 	}
+	*/
 
 };

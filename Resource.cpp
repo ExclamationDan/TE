@@ -33,7 +33,9 @@ namespace TE
 		{
 			Utility::Log("CResource: Allocating new [Model] CResource: '"+Path+"'");
 
-			Models.insert(Models.end(),pair<string,Model>(Path,Collada::LoadModel(Path)));
+			Collada_Loader C;
+			
+			Models.insert(Models.end(),pair<string,Model>(Path,C.LoadModel(Path)));
 			return LoadModel(Path);
 		}
 		else
@@ -89,12 +91,13 @@ namespace TE
 
 	}
 
+	/*
 	Node CResource::LoadConfig(string FileName)
 	{
 
 		return Collada::Load(AliasAdd(Path::Config,FileName));
 	}
-
+	*/
 
 	// |---------- Resource::FileSystem ----------|
 

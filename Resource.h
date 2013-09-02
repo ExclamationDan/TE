@@ -36,7 +36,7 @@ namespace TE
 		std::map<std::string,GLuint> Shader_Programs;
 
 
-		static Node Config;
+		//static Node Config;
 
 		CResource(void);
 		~CResource(void);
@@ -45,7 +45,7 @@ namespace TE
 		GLuint LoadTexture(std::string Path);
 		GLuint LoadShader(std::string FilePath, GLenum ShaderType);
 		GLuint LoadShader_Program(std::string VertexFile, std::string FragmentFile);
-		Node   LoadConfig(std::string FileName);
+		//Node   LoadConfig(std::string FileName);
 
 
 
