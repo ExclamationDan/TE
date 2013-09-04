@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "EngineModule.h"
+#include "Shader.h"
 
 namespace TE
 {
@@ -10,8 +11,18 @@ namespace TE
 	{
 	public:
 
+		GLuint m_CurrentShader;
+
 		CRender();
 		~CRender();
+
+		void Window_Begin();
+		void Window_End();
+		void UseShader(GLuint Shader);
+		void PreDraw();
+		void Draw();
+
+		void Module_Poll();
 	};
 
 };

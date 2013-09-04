@@ -16,6 +16,117 @@ namespace TE
 	{
 #define BUFFER_OFFSET(i) ((void*)(i))
 
+		class Triangle
+		{
+		public:
+			glm::vec3 m_Vertices[3];
+
+			Triangle(glm::vec3 V1,glm::vec3 V2,glm::vec3 V3)
+			{
+				m_Vertices[0] = V1;
+				m_Vertices[1] = V2;
+				m_Vertices[2] = V3;
+			}
+
+			Triangle() {};
+		};
+
+
+		class Square
+		{
+		public:
+
+			Triangle m_Triangles[2];
+			glm::vec3 m_Pos;
+
+			void SetSize(float Size)
+			{
+
+				Triangle Left;
+				//Upper Left A
+				Left.m_Vertices[0] = glm::vec3(0,Size,0);
+				Left.m_Vertices[0].s = 0;
+				Left.m_Vertices[0].t = 1;
+
+				//Lower Left B
+				Left.m_Vertices[1] = glm::vec3(0,0,0);
+				Left.m_Vertices[1].s = 0;
+				Left.m_Vertices[1].t = 0;
+
+				//  Left Far right C
+				Left.m_Vertices[2] = glm::vec3(Size,0,0);
+				Left.m_Vertices[2].s = 1;
+				Left.m_Vertices[2].t = 0;
+
+				m_Triangles[0] = Left;
+
+
+
+				Triangle Right;				
+
+				//  Left Far right C
+				Right.m_Vertices[0] = glm::vec3(0,Size,0);
+				Right.m_Vertices[0].s = 0;
+				Right.m_Vertices[0].t = 1;
+
+				//Lower Left B
+				Right.m_Vertices[1] = glm::vec3(Size,0,0);
+				Right.m_Vertices[1].s = 1;
+				Right.m_Vertices[1].t = 0;
+
+				//Upper Left A
+				Right.m_Vertices[2] = glm::vec3(Size,Size,0);
+				Right.m_Vertices[2].s = 1;
+				Right.m_Vertices[2].t = 1;
+
+				m_Triangles[1] = Right;
+			}
+
+			void Draw()
+			{
+				//SetSize(5);
+
+				glBegin(GL_TRIANGLES);
+				for (int t = 0; t < 2; t++)
+				{
+					for (int v = 0; v < 3; v++)
+					{glTexCoord2f(m_Triangles[t].m_Vertices[v].s,m_Triangles[t].m_Vertices[v].t);
+						glVertex3f(m_Triangles[t].m_Vertices[v].x,m_Triangles[t].m_Vertices[v].y,m_Triangles[t].m_Vertices[v].z);
+						
+					}
+				}
+				glEnd();
+
+			}
+
+		};
+
+
+		class Sprite
+		{
+		public:
+			Triangle m_Triangles[2];
+			glm::vec3 m_Pos;
+
+			Sprite()
+			{
+
+			}
+			Sprite(glm::vec3 Pos, float  size)
+			{
+				m_Pos = Pos;
+
+			}
+
+			std::vector<Triangle> CreateSquare(float size)
+			{
+
+			}
+
+		};
+
+
+
 
 		class VertexBuffer
 		{

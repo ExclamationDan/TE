@@ -36,16 +36,8 @@ namespace TE
 		Module_Log("Mainloop started.");
 		m_MainLoop_Run = true;
 
-
-
-
-
- 
-
-
-
-
 		Console->Start();
+		Render->Window_Begin();
 		MainLoop();
 	}
 	void CEngine::MainLoop_Stop()

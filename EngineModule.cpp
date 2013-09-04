@@ -30,7 +30,7 @@ namespace TE
 
 	void CEngineModule::Module_Log(std::string Text)
 	{
-		Utility::Log(m_Name +": "+Text);
+		Utility::Log(m_Name +": "+Text+"\n");
 	}
 
 	void CEngineModule::Module_SetName(std::string Name)

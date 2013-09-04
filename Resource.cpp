@@ -7,6 +7,8 @@
 #include "Shader.h"
 #include "Utility.h"
 
+#include "TGA.h"
+
 namespace TE
 {
 
@@ -34,7 +36,7 @@ namespace TE
 			Utility::Log("CResource: Allocating new [Model] CResource: '"+Path+"'");
 
 			Collada_Loader C;
-			
+
 			Models.insert(Models.end(),pair<string,Model>(Path,C.LoadModel(Path)));
 			return LoadModel(Path);
 		}
@@ -90,12 +92,61 @@ namespace TE
 		}
 
 	}
+	GLuint CResource::LoadTexture(std::string Name)
+	{		
+
+		//std::cout << "Path: " << AliasGet(Path::Materials) << "\n\n\n\n\n";
+		std::string Path = AliasAdd(Path::Materials,Name);
+		auto Find = Textures.find(Path);
+		if (Find == Textures.end())
+		{		
+			GLuint  m_TexID;
+			//CTGA TGA;
+			//if (!TGA.Load((char*)Path.c_str()))
+
+			if (glfwLoadTexture2D(Path.c_str(),GLFW_BUILD_MIPMAPS_BIT))
+			{
+				Module_Log("Failed to load texture ["+Name+"], ignoring.");
+				return 0;
+			}
+			else
+			{
+				Module_Print("Loaded texture ["+Name+"] successfully!");
+			}
+
+
+			glGenTextures(1, &m_TexID);
+			glBindTexture(GL_TEXTURE_2D, m_TexID);
+			
+			
+			
+
+   glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+   glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP);
+   glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP);
+			//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, TGA.imageWidth, TGA.imageHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, TGA.imageData);
+
+			
+
+			Module_Log("Allocating new [Texture] resource: "+Path);
+
+			Textures.insert(Textures.end(),pair<string,GLuint>(Path,m_TexID));
+
+			return m_TexID;
+		}
+		else
+		{
+			return Find->second;
+		}
+
+	}
 
 	/*
 	Node CResource::LoadConfig(string FileName)
 	{
 
-		return Collada::Load(AliasAdd(Path::Config,FileName));
+	return Collada::Load(AliasAdd(Path::Config,FileName));
 	}
 	*/
 
