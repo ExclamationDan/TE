@@ -72,6 +72,20 @@ namespace TE
 		m_Keys.push_back(key);
 	}
 
+	std::vector<Collada_Node*> Collada_Node::GetNodes(std::string Name)
+	{
+		std::vector<Collada_Node*> NodeList;
+
+		for (auto it = m_Nodes.begin();it != m_Nodes.end();it++)
+		{
+			if ( Utility::CompareString(it->m_Name,Name) )
+			{
+				NodeList.push_back(&(*it));
+			}
+		}
+		return NodeList;
+	}
+
 	Collada_Node* Collada_Node::GetNode(std::string Name)
 	{
 		for (auto it = m_Nodes.begin();it != m_Nodes.end();it++)
@@ -108,7 +122,7 @@ namespace TE
 		}
 		return NULL;
 	}
-	Collada_Node* Collada_Node::GetSimilar()
+	Collada_Node* Collada_Node::GetSimilar(std::string Name)
 	{
 		Collada_Node *N = m_Next;
 		while (N != NULL)
@@ -266,11 +280,35 @@ namespace TE
 				}
 				else if ( Utility::CompareString(Attrib->Name(),"source") || Utility::CompareString(Attrib->Name(),"url"))
 				{
+
+
+
+
 					// Remove '#' symbol.
 					std::string Str = Attrib->Value();
 					Str = Str.erase(0,1);
 					TempKey.m_Value = Str;
-					TempKey.m_ptr = N->m_Root->ID_Get(Str);
+
+					if (Collada_Node* ID_Test = N->m_Root->ID_Get(Str))
+					{
+						if (ID_Test->m_Name.compare("vertices") == 0)
+						{
+							if (ID_Test = ID_Test->GetNode("input"))
+							{
+								if (Collada_Node::Key *KeyTest = ID_Test->GetKey("source"))
+								{
+									TempKey.m_ptr = KeyTest->m_ptr;
+									Utility::Log("Collada_Loader: [ParseKeys] bypassed \"vertices\" for direct access to source.",false);
+								}
+							}
+						}
+						else
+						{
+							TempKey.m_ptr = ID_Test;
+						}
+					}
+
+
 				}
 				N->AddKey(TempKey);
 				Attrib = (tinyxml2::XMLAttribute*) Attrib->Next();
@@ -297,6 +335,127 @@ namespace TE
 	}
 
 
+	struct Collada_Mesh
+	{
+		std::vector<GLfloat> Interleaved;
+	};
+
+
+	Collada_Mesh ParseMesh(Collada_Node *MeshNode)
+	{
+		std::cout << "Parsing Mesh Function.\n";
+		std::vector<GLfloat> Data[3];
+		std::vector<short> Index_Data;
+		Collada_Mesh CMesh;
+
+		for(auto Triangles : MeshNode->GetNodes("triangles"))
+		{
+			std::cout << "Parsing Trianagle.\n";
+			for (auto Input : Triangles->GetNodes("input"))
+			{
+				std::cout << "Parsing " << Input->m_Name << ".\n";
+				unsigned int Type; // 0 = Vertex, 1 = Normal, 2 = Texcoord
+
+				if (Collada_Node::Key *Semantic = Input->GetKey("semantic"))
+				{
+
+					if (Semantic->m_Value.compare("VERTEX") == 0)
+					{
+						Type = 0;
+						std::cout << "Added VERTEX.\n";
+					}
+					else if (Semantic->m_Value.compare("NORMAL") == 0)
+					{
+						Type = 1;
+						std::cout << "Added NORMAL.\n";
+					}
+					else
+					{
+						Type = 2;
+						std::cout << "Added TEXCOORD.\n";
+					}
+				}
+
+				if (Collada_Node::Key *LookupKey = Input->GetKey("source"))
+				{
+					if (LookupKey->m_ptr)
+					{
+						if (Collada_Node *Float_Array = LookupKey->m_ptr->GetNode("float_array"))
+						{
+							if (Collada_Node::Key *FloatKey = Float_Array->GetKey("text"))
+							{
+								Data[Type] = Utility::Vector_Strtok<GLfloat>(FloatKey->m_Value);
+								for (auto it : Data[Type])
+								{
+									std::cout << "["<<Type<<"] Element: " << it << "\n";;
+
+								}
+							}
+							else
+							{
+								std::cout << "Failed data get!\n";
+							}
+						}
+						else
+						{
+							Utility::Log("Collada_Loader: Could not find \"float_array\" in collada document!!!!");
+						}
+
+					}
+				}
+				else
+				{
+					Utility::Log("Collada_Loader: \"float_array\" text pointer NULL!!!");
+				}
+			}
+
+			if (Collada_Node* Tri_P = Triangles->GetNode("p"))
+			{
+				if (Collada_Node::Key *P_Text = Tri_P->GetKey("text"))
+				{
+					Index_Data = Utility::Vector_Strtok<short>(P_Text->m_Value);
+				}
+				else
+				{
+					Utility::Log("Collada: Triangle element lacks \"p\" node's Key 'text' for indexes!!!");
+				}
+			}
+			else
+			{
+				Utility::Log("Collada: Triangle element lacks \"p\" node for indexes!!!");
+			}
+		}
+
+		for(size_t i = 0; i < Index_Data.size()/3;i++)
+		{
+			//std::cout << "("<< Index_Data.size()/3 << "/"<<i<<")\n";
+
+			// Vertex
+			CMesh.Interleaved.push_back(Data[0][Index_Data[i*3]]);
+			CMesh.Interleaved.push_back(Data[0][i*3]*3+1);
+			CMesh.Interleaved.push_back(Data[0][i*3]*3+2);
+
+			// Normal
+			CMesh.Interleaved.push_back(Data[1][i*3]*3);
+			CMesh.Interleaved.push_back(Data[1][i*3]*+1);
+			CMesh.Interleaved.push_back(Data[1][i*3]+2);
+
+			// Texcoord
+			CMesh.Interleaved.push_back(Data[2][i*3]*2);
+			CMesh.Interleaved.push_back(Data[2][i*3]*2+1);
+
+
+			//cout << Data[0][Index_Data[i*3]*3] << ", " <<  Data[0][Index_Data[i*3]*3+1] << ", " <<  Data[0][Index_Data[i*3]*3+2] << "\n";
+			//cout << Data[1][Index_Data[i*3]*3] << ", " <<  Data[1][Index_Data[i*3]*3+1] << ", " <<  Data[1][Index_Data[i*3]*3+2] << "\n";
+			//cout << Data[2][Index_Data[i*3]*2] << ", " <<  Data[2][Index_Data[i*3]*2+1] <<"\n";
+
+		}
+
+
+		return CMesh;
+	}
+
+
 	void Collada_Loader::Load(std::string Path)
 	{
 		XMLDocument Doc;
@@ -312,13 +471,24 @@ namespace TE
 		}
 
 		XMLElement *XMLMain = Doc.RootElement();
-
 		ParseKeys(XMLMain,this);
 		ParseSibling(XMLMain,this);
 
+		std::vector<Collada_Mesh> MeshList;
 
-		PrintMap();
+		Collada_Node* Lib_Geo = GetNode("library_geometries");
+		for( auto Geometry : Lib_Geo->GetNodes("geometry"))
+		{
+			std::cout << "Parsing Geometry.\n";
+			for( auto Mesh : Geometry->GetNodes("mesh"))
+			{
+				std::cout << "Parsing Mesh.\n";
+				MeshList.push_back(ParseMesh(Mesh));
+			}
+		}
 
+
+		//PrintMap();
 		//return Root;
 	}
 

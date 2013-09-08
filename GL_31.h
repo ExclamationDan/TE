@@ -126,24 +126,21 @@ namespace TE
 		};
 
 
-
-
 		class VertexBuffer
 		{
 		public:
-			std::vector<glm::vec3> m_Buffer;
+		;
 
-			GLuint m_nVBO;
-			GLuint m_TBO;
+			GLuint m_nVBO,m_nUBO;
+			unsigned int m_VertexCount;
 
 			VertexBuffer()
 			{
 				m_nVBO = 0;
-				m_TBO = 0;
 			}
 
 
-			void Upload()
+			void Upload(std::vector<glm::vec3> m_Buffer)
 			{
 				glGenBuffers(1, &m_nVBO);
 				glBindBuffer(GL_ARRAY_BUFFER, m_nVBO);
@@ -153,11 +150,12 @@ namespace TE
 
 			void Draw()
 			{
+				glBindBuffer(GL_ARRAY_BUFFER, m_nVBO);
 				glEnableClientState(GL_VERTEX_ARRAY);
-				glVertexPointer(3, sizeof(glm::vec3), 0, &m_Buffer[0].x);
+				glVertexPointer(3, sizeof(glm::vec3), 0,0);
 				glDisableClientState(GL_VERTEX_ARRAY);
 
-				glDrawArrays( GL_TRIANGLES, 0, m_Buffer.size() );  
+				glDrawElements(GL_TRIANGLES, m_VertexCount, GL_UNSIGNED_BYTE, 0);
 			}
 
 
@@ -179,7 +177,7 @@ namespace TE
 				glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 				glTexCoordPointer(2, GL_FLOAT, sizeof(glm::vec3), BUFFER_OFFSET(24));
 
-				glDrawArrays( GL_TRIANGLES, 0, m_Buffer.size() );  
+				//glDrawArrays( GL_TRIANGLES, 0, m_Buffer.size() );  
 
 			}
 
@@ -191,7 +189,7 @@ namespace TE
 			std::vector<glm::vec3> Position_Vectors;
 
 			//Refined data is the sequence string of "1 2 3 4 ..." to a vector of type GLfloat of [1,2,3,4,...]
-			std::vector<GLfloat> RefinedData = Utility::Vector_SplitString<GLfloat>((char*) RawData.c_str());
+			std::vector<GLfloat> RefinedData = Utility::Vector_Strtok<GLfloat>((char*) RawData.c_str());
 
 
 			for (size_t Vec3_Elements = 0; Vec3_Elements < RefinedData.size()/3;Vec3_Elements++)

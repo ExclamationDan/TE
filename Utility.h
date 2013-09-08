@@ -36,7 +36,7 @@ namespace TE
 
 
 		template <typename T>
-		static std::vector<T>	Vector_SplitString(char* Text, int VectorSize = 0)
+		static std::vector<T>	Vector_Strtok(char* Text, int VectorSize = 0)
 		{
 			if (Text == NULL)		{return std::vector<T>(0);}
 			std::vector<T> Ret;
@@ -67,6 +67,12 @@ namespace TE
 
 			Ret.shrink_to_fit();
 			return Ret;
+		}
+
+		template <typename T>
+		static std::vector<T>	Vector_Strtok(std::string Str, int VectorSize = 0)
+		{
+			return Vector_Strtok<T>((char*) Str.c_str());
 		}
 
 		template <typename T>

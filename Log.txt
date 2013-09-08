@@ -1537,3 +1537,232 @@
 [Sep|04 - 07:55PM] Shader: Program success.
 [Sep|04 - 07:55PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
 
+[Sep|07 - 07:58PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 07:58PM] Engine: Mainloop started.
+
+[Sep|07 - 07:58PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 07:58PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 07:58PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 07:58PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 07:58PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 07:58PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 07:58PM] Shader: Program success.
+[Sep|07 - 07:58PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 07:59PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 07:59PM] Engine: Mainloop started.
+
+[Sep|07 - 07:59PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 07:59PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 07:59PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 07:59PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 07:59PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 07:59PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 07:59PM] Shader: Program success.
+[Sep|07 - 07:59PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:04PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:05PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:05PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:06PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:10PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:13PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:14PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:15PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:16PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:24PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:25PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:26PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:27PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:28PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:29PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:30PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:30PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:32PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:32PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:33PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:34PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:34PM] Collada_Loader: "float_array" text pointer NULL!!!
+[Sep|07 - 09:34PM] Collada_Loader: "float_array" text pointer NULL!!!
+[Sep|07 - 09:34PM] Collada_Loader: "float_array" text pointer NULL!!!
+[Sep|07 - 09:38PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:38PM] Engine: Mainloop started.
+
+[Sep|07 - 09:38PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:38PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:38PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:38PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:38PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:38PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:38PM] Shader: Program success.
+[Sep|07 - 09:38PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:39PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:39PM] Engine: Mainloop started.
+
+[Sep|07 - 09:39PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:39PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:39PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:39PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:39PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:39PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:39PM] Shader: Program success.
+[Sep|07 - 09:39PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:40PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:40PM] Engine: Mainloop started.
+
+[Sep|07 - 09:40PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:40PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:40PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:40PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:40PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:40PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:40PM] Shader: Program success.
+[Sep|07 - 09:40PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:41PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:41PM] Engine: Mainloop started.
+
+[Sep|07 - 09:41PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:41PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:41PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:41PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:41PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:41PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:41PM] Shader: Program success.
+[Sep|07 - 09:41PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:41PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:41PM] Engine: Mainloop started.
+
+[Sep|07 - 09:41PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:41PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:41PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:41PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:41PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:41PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:41PM] Shader: Program success.
+[Sep|07 - 09:41PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:42PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:42PM] Engine: Mainloop started.
+
+[Sep|07 - 09:42PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:42PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:42PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:42PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:42PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:42PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:42PM] Shader: Program success.
+[Sep|07 - 09:42PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:44PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:44PM] Engine: Mainloop started.
+
+[Sep|07 - 09:44PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:44PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:44PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:44PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:44PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:44PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:44PM] Shader: Program success.
+[Sep|07 - 09:44PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:44PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:44PM] Engine: Mainloop started.
+
+[Sep|07 - 09:44PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:44PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:44PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:44PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:44PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:44PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:44PM] Shader: Program success.
+[Sep|07 - 09:44PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:45PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:45PM] Engine: Mainloop started.
+
+[Sep|07 - 09:45PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:45PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:45PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:45PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:45PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:45PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:45PM] Shader: Program success.
+[Sep|07 - 09:45PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:47PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:47PM] Engine: Mainloop started.
+
+[Sep|07 - 09:47PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:47PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:47PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:47PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:47PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:47PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:47PM] Shader: Program success.
+[Sep|07 - 09:47PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:48PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:48PM] Engine: Mainloop started.
+
+[Sep|07 - 09:48PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:48PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:48PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:48PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:48PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:48PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:48PM] Shader: Program success.
+[Sep|07 - 09:48PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:51PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:51PM] Engine: Mainloop started.
+
+[Sep|07 - 09:51PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:51PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:51PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:51PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:51PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:51PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:51PM] Shader: Program success.
+[Sep|07 - 09:51PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:52PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:52PM] Engine: Mainloop started.
+
+[Sep|07 - 09:52PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:52PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:52PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:52PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:52PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:52PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:52PM] Shader: Program success.
+[Sep|07 - 09:52PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|07 - 09:54PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|07 - 09:54PM] Engine: Mainloop started.
+
+[Sep|07 - 09:54PM] Render: OpenGL version: 4.3.0
+[Sep|07 - 09:54PM] Resource: Virtual Poll() function undefined!
+[Sep|07 - 09:54PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|07 - 09:54PM] Shader: [Shader.Vertex] Load complete.
+[Sep|07 - 09:54PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|07 - 09:54PM] Shader: [Texture.Fragment] Load complete.
+[Sep|07 - 09:54PM] Shader: Program success.
+[Sep|07 - 09:54PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|08 - 03:49PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|08 - 03:49PM] Engine: Mainloop started.
+
+[Sep|08 - 03:49PM] Render: OpenGL version: 4.3.0
+[Sep|08 - 03:49PM] Resource: Virtual Poll() function undefined!
+[Sep|08 - 03:49PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|08 - 03:49PM] Shader: [Shader.Vertex] Load complete.
+[Sep|08 - 03:49PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|08 - 03:49PM] Shader: [Texture.Fragment] Load complete.
+[Sep|08 - 03:49PM] Shader: Program success.
+[Sep|08 - 03:49PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+

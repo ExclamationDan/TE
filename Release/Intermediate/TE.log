@@ -1,8 +1,19 @@
-﻿Build started 9/4/2013 7:55:52 PM.
+﻿Build started 9/8/2013 3:49:23 PM.
      1>Project "C:\Users\Danny\Documents\GitHub\TE\TE.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\Intermediate\\" /Fd"Release\Intermediate\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Render.cpp
-         Render.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\Intermediate\\" /Fd"Release\Intermediate\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Collada.cpp
+         Collada.cpp
+     1>c:\users\danny\documents\github\te\Utility.h(64): warning C4244: 'argument' : conversion from 'float' to 'short', possible loss of data
+                 c:\users\danny\documents\github\te\Utility.h(75) : see reference to function template instantiation 'std::vector<_Ty> TE::Utility::Vector_Strtok<short>(char *,int)' being compiled
+                 with
+                 [
+                     _Ty=short
+                 ]
+                 Collada.cpp(416) : see reference to function template instantiation 'std::vector<_Ty> TE::Utility::Vector_Strtok<short>(std::string,int)' being compiled
+                 with
+                 [
+                     _Ty=short
+                 ]
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Danny\Documents\GitHub\TE\Release\TurkeyEngine.exe" /NOLOGO /LIBPATH:C:\Users\Danny\Documents\GitHub\TE\\Lib\ glu32.lib opengl32.lib glew32.lib GLFW.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Danny\Documents\GitHub\TE\Release\TurkeyEngine.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Danny\Documents\GitHub\TE\Release\TurkeyEngine.lib" /MACHINE:X86 /SAFESEH Release\Intermediate\Collada.obj
          Release\Intermediate\Console.obj
@@ -25,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.29
+Time Elapsed 00:00:06.04

@@ -65,11 +65,13 @@ namespace TE
 			// Parse only immediate child nodes for matching name
 			Collada_Node* GetNode(std::string Name);
 
+			std::vector<Collada_Node*> GetNodes(std::string Name);
+
 			// Parse only immediate node children keys and self
 			Key* GetKey(std::string Name);
 
 			// Iterate Node->Next pointers until a node with a matching name as this->m_Name is found.
-			Collada_Node* GetSimilar();
+			Collada_Node* GetSimilar(std::string Name);
 
 			void MapKeys();
 			void MapNodes();
