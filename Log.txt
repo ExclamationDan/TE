@@ -1986,3 +1986,82 @@ Fragment shader uses varying vTexCoord but vertex shader does not write to it.
 [Sep|09 - 12:18PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
 [Sep|09 - 12:21PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
 [Sep|09 - 12:22PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:42PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 01:46PM] Engine: Mainloop started.
+
+[Sep|09 - 01:46PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:46PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:46PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:46PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:48PM] Engine: Mainloop started.
+
+[Sep|09 - 01:48PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:48PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:48PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:48PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:48PM] Engine: Mainloop started.
+
+[Sep|09 - 01:48PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:48PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:48PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:48PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:49PM] Engine: Mainloop started.
+
+[Sep|09 - 01:49PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:49PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:49PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:49PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:50PM] Engine: Mainloop started.
+
+[Sep|09 - 01:50PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:50PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:50PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:50PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:51PM] Engine: Mainloop started.
+
+[Sep|09 - 01:51PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:51PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:51PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:51PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:52PM] Engine: Mainloop started.
+
+[Sep|09 - 01:52PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:52PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:52PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:52PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:54PM] Engine: Mainloop started.
+
+[Sep|09 - 01:54PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:54PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:54PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:54PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:55PM] Engine: Mainloop started.
+
+[Sep|09 - 01:55PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:55PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:55PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:55PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:56PM] Engine: Mainloop started.
+
+[Sep|09 - 01:56PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:56PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:56PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:56PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:56PM] Engine: Mainloop started.
+
+[Sep|09 - 01:56PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:56PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:56PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:56PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:59PM] Engine: Mainloop started.
+
+[Sep|09 - 01:59PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:59PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:59PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:59PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|09 - 01:59PM] Engine: Mainloop started.
+
+[Sep|09 - 01:59PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 01:59PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 01:59PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|09 - 01:59PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.

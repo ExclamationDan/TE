@@ -98,6 +98,7 @@ namespace TE
 		}
 	}
 
+	
 
 
 	void CRender::PreDraw()
@@ -107,10 +108,10 @@ namespace TE
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
 
-		GLuint Shader = Engine.Resource->LoadShader_Program("Shader.Vertex","Texture.Fragment");
-		UseShader(Shader);
-		GLuint LocationMVP = glGetUniformLocation(Shader, "MVP");
-		GLuint LocationTex = glGetUniformLocation(Shader, "texture");
+		//GLuint Shader = Engine.Resource->LoadShader_Program("Shader.Vertex","Texture.Fragment");
+		//UseShader(Shader);
+		//GLuint LocationMVP = glGetUniformLocation(Shader, "MVP");
+		//GLuint LocationTex = glGetUniformLocation(Shader, "texture");
 
 
 
@@ -139,14 +140,18 @@ namespace TE
 		glm::mat4 Model = glm::scale(glm::mat4(1.0f), glm::vec3(0.5f));
 		glm::mat4 MVP = Projection * View * Model;
 
-		glUniform1i(LocationTex,Engine.Resource->LoadTexture("TestT16.TGA"));
-		glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,glm::value_ptr(MVP) );
+		//glUniform1i(LocationTex,Engine.Resource->LoadTexture("TestT16.TGA"));
+		//glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,glm::value_ptr(MVP) );
 
 	}
 	void CRender::Draw()
 	{
 		PreDraw();
 
+		GL_31::Model *M = Engine.Resource->LoadModel("box.dae");
+		M->Draw();
+
+		//std::cout << "Draw!\n";
 		/*
 		for(auto it = Resource::DrawList.begin(); it != Resource::DrawList.end();it++)
 		{
@@ -156,9 +161,10 @@ namespace TE
 //glBindTexture(GL_TEXTURE_2D,Engine.Resource->LoadTexture("TestT16.TGA"));
 
 		
-		GL_31::Square S;
-		S.SetSize(10);
-		S.Draw();
+		//GL_31::Square S;
+		//S.SetSize(10);
+		//S.Draw();
+
 
 		glfwSwapBuffers();
 

@@ -6,9 +6,10 @@
 #include <iostream>
 #include <map>
 #include <list>
-#include "Model.h"
+//#include "Model.h"
 #include "Collada.h"
 #include "EngineModule.h"
+#include "GL_31.h"
 
 namespace TE 
 {
@@ -29,7 +30,7 @@ namespace TE
 	class CResource : public CEngineModule
 	{
 	public:
-		std::map<std::string,Model> Models;
+		std::map<std::string,GL_31::Model> Models;
 		std::map<std::string,GLuint> Textures;
 
 		std::map<std::string,GLuint> Shaders;
@@ -41,7 +42,7 @@ namespace TE
 		CResource(void);
 		~CResource(void);
 
-		Model* LoadModel(std::string Path);
+		GL_31::Model* LoadModel(std::string Path);
 		GLuint LoadTexture(std::string Path);
 		GLuint LoadShader(std::string FilePath, GLenum ShaderType);
 		GLuint LoadShader_Program(std::string VertexFile, std::string FragmentFile);

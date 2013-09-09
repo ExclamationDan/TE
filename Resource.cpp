@@ -9,6 +9,8 @@
 
 #include "TGA.h"
 
+#include "GL_31.h"
+
 namespace TE
 {
 
@@ -27,7 +29,7 @@ namespace TE
 	CResource::~CResource(void){}
 
 
-	Model* CResource::LoadModel(string Path)
+	GL_31::Model* CResource::LoadModel(string Path)
 	{
 		auto Find = Models.find(Path);
 
@@ -37,7 +39,7 @@ namespace TE
 
 			Collada_Loader C;
 
-			Models.insert(Models.end(),pair<string,Model>(Path,C.LoadModel(Path)));
+			Models.insert(Models.end(),pair<string,GL_31::Model>(Path,C.Load(Path)));
 			return LoadModel(Path);
 		}
 		else

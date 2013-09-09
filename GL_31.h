@@ -1,11 +1,14 @@
 // File: GL_31.h
 //Purpose: To create a class wrapper for needed OpenGL functions. VertexBuffer ... etc.
 // Programmer: Daniel Martin 8/24/2013
+#pragma once
 
 #include "GL\glew.h"
+#include "glm\glm.hpp"
+
 #include <iostream>
 #include <vector>
-#include "glm\glm.hpp"
+
 
 #include "Utility.h"
 //using namespace glm;
@@ -14,8 +17,65 @@ namespace TE
 {
 	namespace GL_31
 	{
-#define BUFFER_OFFSET(i) ((void*)(i))
+//#define BUFFER_OFFSET(i) ((void*)(i))
 
+
+		class Model
+		{
+		public:
+			GLuint m_VBO;
+			GLuint m_TriangleCount;
+
+			void CombineMesh(std::vector<std::vector<GLfloat>> Interleaved_Data)
+			{
+				std::vector<GLfloat> TotalData;
+				long int TotalSize = 0;
+
+				for (auto STDVector : Interleaved_Data)
+				{
+					TotalSize += STDVector.size();
+				}
+				TotalData.reserve(TotalSize);
+				std::cout << "Total vector size: " << TotalSize << "\n";
+				m_TriangleCount = TotalSize/8;
+				for (auto STDVector : Interleaved_Data)
+				{
+					TotalData.insert(TotalData.end(),STDVector.begin(),STDVector.end());
+				}
+
+				for (auto Element : TotalData)
+				{
+					//std::cout << "Element: "<< Element << "\n";
+				}
+
+				glGenBuffers(1, &m_VBO);
+				glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+				glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat)*TotalData.size(), &TotalData[0], GL_STATIC_DRAW);
+
+			}
+
+			void Draw()
+			{
+				glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+				glEnableClientState(GL_VERTEX_ARRAY);
+				glVertexPointer(3, GL_FLOAT, sizeof(GLfloat)*8,NULL); 
+				glEnableClientState(GL_NORMAL_ARRAY);
+				glNormalPointer(GL_FLOAT, sizeof(GLfloat)*8,((char*)NULL)+3*sizeof(GLfloat));
+				glClientActiveTexture(GL_TEXTURE0);
+				glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+				glTexCoordPointer(2, GL_FLOAT, sizeof(GLfloat)*8,((char*)NULL)+5*sizeof(GLfloat));
+
+				glDrawArrays( GL_TRIANGLES, 0,m_TriangleCount*3);  
+
+				glDisableClientState(GL_VERTEX_ARRAY);
+				glDisableClientState(GL_NORMAL_ARRAY);
+				glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			}
+
+		};
+
+		/*
 		class Triangle
 		{
 		public:
@@ -125,44 +185,6 @@ namespace TE
 
 		};
 
-		class Model
-		{
-		public:
-			GLuint m_VBO;
-
-
-			void CombineMesh(std::vector<std::vector<GLfloat>> Interleaved_Data)
-			{
-				std::vector<GLfloat> TotalData;
-				long int TotalSize = 0;
-
-				for (auto STDVector : Interleaved_Data)
-				{
-				for (auto Element : STDVector)
-				{
-					std::cout << "VecElement: "<< Element << "\n";
-				}
-
-					TotalSize += STDVector.size();
-				}
-				TotalData.reserve(TotalSize);
-				std::cout << "Total vector size: " << TotalSize << "\n";
-				
-				for (auto STDVector : Interleaved_Data)
-				{
-					TotalData.insert(TotalData.end(),STDVector.begin(),STDVector.end());
-				}
-
-				for (auto Element : TotalData)
-				{
-					//std::cout << "Element: "<< Element << "\n";
-				}
-
-			}
-
-		};
-
-
 		class VertexBuffer
 		{
 		public:
@@ -245,7 +267,7 @@ namespace TE
 
 
 
-
+		*/
 
 
 

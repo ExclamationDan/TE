@@ -5,7 +5,9 @@
 #pragma once
 #include <iostream>
 #include <list>
-#include "Model.h"
+//#include "Model.h"
+#include "GL_31.h"
+
 #include "TinyXML\tinyxml2.h"
 using namespace tinyxml2;
 
@@ -98,8 +100,8 @@ namespace TE
 			static void ParseKeys(XMLElement* XML, Collada_Node* N);
 			static void ParseSibling(XMLElement* XML, Collada_Node* Parent);
 
-			void Load(std::string Path);
-			Model LoadModel(std::string path);
+			GL_31::Model Load(std::string Path);
+			GL_31::Model LoadModel(std::string path);
 
 		};
 }

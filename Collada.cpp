@@ -11,7 +11,6 @@
 
 #include "glm\glm.hpp"
 
-#include "GL_31.h"
 
 using namespace std;
 
@@ -462,7 +461,7 @@ namespace TE
 	}
 
 
-	void Collada_Loader::Load(std::string Path)
+	GL_31::Model Collada_Loader::Load(std::string Path)
 	{
 		XMLDocument Doc;
 		Path = Engine.Resource->AliasAdd(Path::Models,Path);
@@ -473,7 +472,7 @@ namespace TE
 		else
 		{
 			Utility::Log("Collada: Failed to open file ["+Path+"]");
-			return;
+			return GL_31::Model();
 		}
 
 		XMLElement *XMLMain = Doc.RootElement();
@@ -502,16 +501,16 @@ namespace TE
 
 		GL_31::Model M;
 		M.CombineMesh(VecList);
-
+		return M;
 
 		//PrintMap();
 		//return Root;
 	}
 
-	Model Collada_Loader::LoadModel(std::string Path)
+	GL_31::Model Collada_Loader::LoadModel(std::string Path)
 	{
 		Utility::Log("Collada_Loader: LoadModel() - Used unfinished method! Returning Model()");
-		return Model();
+		return GL_31::Model();
 	}
 	/*
 	std::vector<glm::vec3> Vectorize_Tokens(const char* Text,bool _3D = true)
