@@ -11,6 +11,8 @@
 
 #include "glm\glm.hpp"
 
+#include "GL_31.h"
+
 using namespace std;
 
 namespace TE
@@ -281,9 +283,6 @@ namespace TE
 				else if ( Utility::CompareString(Attrib->Name(),"source") || Utility::CompareString(Attrib->Name(),"url"))
 				{
 
-
-
-
 					// Remove '#' symbol.
 					std::string Str = Attrib->Value();
 					Str = Str.erase(0,1);
@@ -337,6 +336,7 @@ namespace TE
 
 	struct Collada_Mesh
 	{
+
 		std::vector<GLfloat> Interleaved;
 	};
 
@@ -387,7 +387,7 @@ namespace TE
 								Data[Type] = Utility::Vector_Strtok<GLfloat>(FloatKey->m_Value);
 								for (auto it : Data[Type])
 								{
-									std::cout << "["<<Type<<"] Element: " << it << "\n";;
+									//std::cout << "["<<Type<<"] Element: " << it << "\n";;
 
 								}
 							}
@@ -431,24 +431,30 @@ namespace TE
 			//std::cout << "("<< Index_Data.size()/3 << "/"<<i<<")\n";
 
 			// Vertex
-			CMesh.Interleaved.push_back(Data[0][Index_Data[i*3]]);
-			CMesh.Interleaved.push_back(Data[0][i*3]*3+1);
-			CMesh.Interleaved.push_back(Data[0][i*3]*3+2);
+			CMesh.Interleaved.push_back(Data[0][Index_Data[i*3]*3]);
+			CMesh.Interleaved.push_back(Data[0][Index_Data[i*3]*3+1]);
+			CMesh.Interleaved.push_back(Data[0][Index_Data[i*3]*3+2]);
 
 			// Normal
-			CMesh.Interleaved.push_back(Data[1][i*3]*3);
-			CMesh.Interleaved.push_back(Data[1][i*3]*+1);
-			CMesh.Interleaved.push_back(Data[1][i*3]+2);
+			CMesh.Interleaved.push_back(Data[1][Index_Data[i*3]*3]);
+			CMesh.Interleaved.push_back(Data[1][Index_Data[i*3]*3+1]);
+			CMesh.Interleaved.push_back(Data[1][Index_Data[i*3]*3+2]);
 
 			// Texcoord
-			CMesh.Interleaved.push_back(Data[2][i*3]*2);
-			CMesh.Interleaved.push_back(Data[2][i*3]*2+1);
+			CMesh.Interleaved.push_back(Data[2][Index_Data[i*3]*2]);
+			CMesh.Interleaved.push_back(Data[2][Index_Data[i*3]*2+1]);
 
 
-			//cout << Data[0][Index_Data[i*3]*3] << ", " <<  Data[0][Index_Data[i*3]*3+1] << ", " <<  Data[0][Index_Data[i*3]*3+2] << "\n";
-			//cout << Data[1][Index_Data[i*3]*3] << ", " <<  Data[1][Index_Data[i*3]*3+1] << ", " <<  Data[1][Index_Data[i*3]*3+2] << "\n";
-			//cout << Data[2][Index_Data[i*3]*2] << ", " <<  Data[2][Index_Data[i*3]*2+1] <<"\n";
+			//cout << "Position: (" << Data[0][Index_Data[i*3]*3] << "," <<  Data[0][Index_Data[i*3]*3+1] << "," <<  Data[0][Index_Data[i*3]*3+2] << ")\n";
+			//cout << "Normal  : (" << Data[1][Index_Data[i*3]*3] << "," <<  Data[1][Index_Data[i*3]*3+1] << "," <<  Data[1][Index_Data[i*3]*3+2] << ")\n";
+			//cout << "Texcoord: ("<<Data[2][Index_Data[i*3]*2] << "," <<  Data[2][Index_Data[i*3]*2+1] <<")\n";
 
+		}
+
+		for (auto it : CMesh.Interleaved)
+		{
+
+			//std::cout << "Element: " << it << "\n";;
 		}
 
 
@@ -486,6 +492,16 @@ namespace TE
 				MeshList.push_back(ParseMesh(Mesh));
 			}
 		}
+
+
+		std::vector<std::vector<GLfloat>> VecList;
+		for (auto M : MeshList)
+		{
+			VecList.push_back(M.Interleaved);
+		}
+
+		GL_31::Model M;
+		M.CombineMesh(VecList);
 
 
 		//PrintMap();

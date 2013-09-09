@@ -1766,3 +1766,223 @@
 [Sep|08 - 03:49PM] Shader: Program success.
 [Sep|08 - 03:49PM] Resource: Allocating new [Texture] resource: C:/Users/Danny/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
 
+[Sep|09 - 12:01PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:01PM] Engine: Mainloop started.
+
+[Sep|09 - 12:01PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|09 - 12:01PM] Resource: Virtual Poll() function undefined!
+[Sep|09 - 12:01PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|09 - 12:01PM] Shader: [Shader.Vertex] Load complete.
+[Sep|09 - 12:01PM] CResource: Allocating new [Shader] CResource: 'Texture.Fragment'
+[Sep|09 - 12:01PM] Shader: [Texture.Fragment] Load complete.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Resource: Allocating new [Texture] resource: C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Materials/TestT16.TGA
+
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:01PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:01PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Resource: LoadShader_Program() Failed, Shader::AttachToProgram() returned NULL program.
+[Sep|09 - 12:02PM] Shader: Shader program link failed with error(s).
+Fragment shader uses varying vTexCoord but vertex shader does not write to it.
+
+[Sep|09 - 12:02PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:07PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:09PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:12PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:14PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:14PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:16PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:18PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:21PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.
+[Sep|09 - 12:22PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/Box.dae] for parsing successfully.

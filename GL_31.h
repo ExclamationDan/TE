@@ -125,11 +125,48 @@ namespace TE
 
 		};
 
+		class Model
+		{
+		public:
+			GLuint m_VBO;
+
+
+			void CombineMesh(std::vector<std::vector<GLfloat>> Interleaved_Data)
+			{
+				std::vector<GLfloat> TotalData;
+				long int TotalSize = 0;
+
+				for (auto STDVector : Interleaved_Data)
+				{
+				for (auto Element : STDVector)
+				{
+					std::cout << "VecElement: "<< Element << "\n";
+				}
+
+					TotalSize += STDVector.size();
+				}
+				TotalData.reserve(TotalSize);
+				std::cout << "Total vector size: " << TotalSize << "\n";
+				
+				for (auto STDVector : Interleaved_Data)
+				{
+					TotalData.insert(TotalData.end(),STDVector.begin(),STDVector.end());
+				}
+
+				for (auto Element : TotalData)
+				{
+					//std::cout << "Element: "<< Element << "\n";
+				}
+
+			}
+
+		};
+
 
 		class VertexBuffer
 		{
 		public:
-		;
+		
 
 			GLuint m_nVBO,m_nUBO;
 			unsigned int m_VertexCount;
