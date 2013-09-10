@@ -20,27 +20,38 @@ namespace TE
 //#define BUFFER_OFFSET(i) ((void*)(i))
 
 
+		class Mesh
+		{
+		public:
+
+			std::vector<GLfloat> Interleaved;
+
+
+
+
+		};
+
 		class Model
 		{
 		public:
 			GLuint m_VBO;
 			GLuint m_TriangleCount;
 
-			void CombineMesh(std::vector<std::vector<GLfloat>> Interleaved_Data)
+			void CombineMesh(std::vector<Mesh> MeshList)
 			{
 				std::vector<GLfloat> TotalData;
 				long int TotalSize = 0;
 
-				for (auto STDVector : Interleaved_Data)
+				for (auto Mesh : MeshList)
 				{
-					TotalSize += STDVector.size();
+					TotalSize += Mesh.Interleaved.size();
 				}
 				TotalData.reserve(TotalSize);
 				std::cout << "Total vector size: " << TotalSize << "\n";
 				m_TriangleCount = TotalSize/8;
-				for (auto STDVector : Interleaved_Data)
+				for (auto Mesh : MeshList)
 				{
-					TotalData.insert(TotalData.end(),STDVector.begin(),STDVector.end());
+					TotalData.insert(TotalData.end(),Mesh.Interleaved.begin(),Mesh.Interleaved.end());
 				}
 
 				for (auto Element : TotalData)

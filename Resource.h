@@ -11,6 +11,8 @@
 #include "EngineModule.h"
 #include "GL_31.h"
 
+#include "World.h"
+
 namespace TE 
 {
 
@@ -36,6 +38,7 @@ namespace TE
 		std::map<std::string,GLuint> Shaders;
 		std::map<std::string,GLuint> Shader_Programs;
 
+		CWorld m_World;
 
 		//static Node Config;
 

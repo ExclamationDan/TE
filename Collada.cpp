@@ -333,19 +333,13 @@ namespace TE
 	}
 
 
-	struct Collada_Mesh
-	{
 
-		std::vector<GLfloat> Interleaved;
-	};
-
-
-	Collada_Mesh ParseMesh(Collada_Node *MeshNode)
+	GL_31::Mesh ParseMesh(Collada_Node *MeshNode)
 	{
 		std::cout << "Parsing Mesh Function.\n";
 		std::vector<GLfloat> Data[3];
 		std::vector<short> Index_Data;
-		Collada_Mesh CMesh;
+		GL_31::Mesh CMesh;
 
 		for(auto Triangles : MeshNode->GetNodes("triangles"))
 		{
@@ -479,7 +473,7 @@ namespace TE
 		ParseKeys(XMLMain,this);
 		ParseSibling(XMLMain,this);
 
-		std::vector<Collada_Mesh> MeshList;
+		std::vector<GL_31::Mesh> MeshList;
 
 		Collada_Node* Lib_Geo = GetNode("library_geometries");
 		for( auto Geometry : Lib_Geo->GetNodes("geometry"))
@@ -492,15 +486,8 @@ namespace TE
 			}
 		}
 
-
-		std::vector<std::vector<GLfloat>> VecList;
-		for (auto M : MeshList)
-		{
-			VecList.push_back(M.Interleaved);
-		}
-
 		GL_31::Model M;
-		M.CombineMesh(VecList);
+		M.CombineMesh(MeshList);
 		return M;
 
 		//PrintMap();

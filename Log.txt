@@ -650,3 +650,24 @@ Fragment shader uses varying vTexCoord but vertex shader does not write to it.
 
 [Sep|10 - 12:07PM] Engine: Module destructed.
 
+[Sep|10 - 01:06PM] Engine: Mainloop started.
+
+[Sep|10 - 01:06PM] Render: OpenGL version: 2.1.0 - Build 8.15.10.2119
+[Sep|10 - 01:06PM] Resource: Virtual Poll() function undefined!
+[Sep|10 - 01:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Sep|10 - 01:06PM] Shader: [Shader.Vertex] Load complete.
+[Sep|10 - 01:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Sep|10 - 01:06PM] Shader: [Shader.Fragment] Load complete.
+[Sep|10 - 01:06PM] Shader: Program success.
+[Sep|10 - 01:06PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Sep|10 - 01:06PM] Collada: Loadeded [C:/Users/dmartin/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Sep|10 - 01:06PM] Engine: Mainloop stopped.
+
+[Sep|10 - 01:06PM] Render: Module destructed.
+
+[Sep|10 - 01:06PM] Resource: Module destructed.
+
+[Sep|10 - 01:06PM] Console: Module destructed.
+
+[Sep|10 - 01:06PM] Engine: Module destructed.
+
