@@ -23,6 +23,4 @@ void main(int argc, char* argv[])
 	//Col_Library_Geometries Lib = Collada::Load_LibGeometries("Box.dae");
 
 	Engine.MainLoop_Start();
-	getchar();
-
 }

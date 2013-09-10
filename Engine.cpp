@@ -9,6 +9,16 @@
 namespace TE
 {
 
+		namespace ConCommands
+		{
+			void Engine_Stop(CConCommand Info)
+			{
+				Engine.MainLoop_Stop();
+			}
+		}
+
+
+
 	CEngine::CEngine(void)
 	{
 		Module_SetName("Engine");
@@ -17,6 +27,10 @@ namespace TE
 		Render =  new CRender();
 		Resource =  new CResource();
 		Console =  new CConsole();
+
+		
+		Console->Command_Reg(ConCommands::Engine_Stop,"Engine_Stop","Stop the engine's mainloop.");
+		Console->Command_Reg(ConCommands::Engine_Stop,"Stop","Stop the engine's mainloop.");
 	}
 
 

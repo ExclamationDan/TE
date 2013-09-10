@@ -108,9 +108,14 @@ namespace TE
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
 
-		//GLuint Shader = Engine.Resource->LoadShader_Program("Shader.Vertex","Texture.Fragment");
-		//UseShader(Shader);
-		//GLuint LocationMVP = glGetUniformLocation(Shader, "MVP");
+		GLuint Shader = Engine.Resource->LoadShader_Program("Shader.Vertex","Shader.Fragment");
+		if (Shader == 0)
+		{
+			Engine.MainLoop_Stop();
+			return;
+		}
+		UseShader(Shader);
+		GLuint LocationMVP = glGetUniformLocation(Shader, "MVP");
 		//GLuint LocationTex = glGetUniformLocation(Shader, "texture");
 
 
@@ -130,7 +135,7 @@ namespace TE
 
 
 		glm::vec3 Rotate;
-		Rotate.x = 0; Rotate.y = 0; Rotate.z = 0;
+		Rotate.x = 100; Rotate.y = 0; Rotate.z = 0;
 
 		glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.1f, 100.f);
 		glm::mat4 ViewTranslate = glm::translate( glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -5));
@@ -141,7 +146,7 @@ namespace TE
 		glm::mat4 MVP = Projection * View * Model;
 
 		//glUniform1i(LocationTex,Engine.Resource->LoadTexture("TestT16.TGA"));
-		//glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,glm::value_ptr(MVP) );
+		glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,glm::value_ptr(MVP) );
 
 	}
 	void CRender::Draw()

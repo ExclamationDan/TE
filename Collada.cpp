@@ -232,7 +232,7 @@ namespace TE
 	{
 		if (ID_Find(Name).first)
 		{
-			Utility::Log("[WARNING] (Node::ID_Add) m_IDLookup already contains ID "+Name);
+			Utility::Log("[WARNING] (Collada_Loader::ID_Add) m_IDLookup already contains ID "+Name);
 		}
 		m_IDLookup.push_back(std::pair<std::string,Collada_Node*>(Name,Ptr));
 	}
@@ -240,7 +240,7 @@ namespace TE
 	{
 		if (!m_Root)
 		{
-			Utility::Log("Node: m_Root == NULL! Failed to add ID lookup.");
+			Utility::Log("Collada_Node: m_Root == NULL! Failed to add ID lookup.");
 			return NULL;
 		}
 
@@ -296,7 +296,7 @@ namespace TE
 								if (Collada_Node::Key *KeyTest = ID_Test->GetKey("source"))
 								{
 									TempKey.m_ptr = KeyTest->m_ptr;
-									Utility::Log("Collada_Loader: [ParseKeys] bypassed \"vertices\" for direct access to source.",false);
+									//Utility::Log("Collada_Loader: [ParseKeys] bypassed \"vertices\" for direct access to source.",false);
 								}
 							}
 						}
@@ -484,10 +484,10 @@ namespace TE
 		Collada_Node* Lib_Geo = GetNode("library_geometries");
 		for( auto Geometry : Lib_Geo->GetNodes("geometry"))
 		{
-			std::cout << "Parsing Geometry.\n";
+			//std::cout << "Parsing Geometry.\n";
 			for( auto Mesh : Geometry->GetNodes("mesh"))
 			{
-				std::cout << "Parsing Mesh.\n";
+				//std::cout << "Parsing Mesh.\n";
 				MeshList.push_back(ParseMesh(Mesh));
 			}
 		}
