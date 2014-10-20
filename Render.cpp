@@ -1,5 +1,8 @@
 #include "Render.h"
 
+
+
+
 #include "Engine.h"
 #include "Resource.h"
 
@@ -8,11 +11,13 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 
-#include "GL\glew.h"
-#include "GL\glfw.h"
+
+
 #include "Utility.h"
 
 #include "GL_31.h"
+
+#include "ShitCamera.h"
 
 
 namespace TE
@@ -42,21 +47,14 @@ namespace TE
 			Window_End();
 			return;
 		}
+		Engine.Window = glfwCreateWindow(500, 500, "TE", NULL, NULL);
 
 
-		glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 1);
-		glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 1);
-		//glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
-
-		//glfwOpenWindowHint(GLFW_FSAA_SAMPLES,4);
-		//glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-		//glfwOpenWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
-		//glfwDisable( GLFW_AUTO_POLL_EVENTS );
-
-		if( !glfwOpenWindow( 500,500, 0,0,0,0,0,0, GLFW_WINDOW ) )
+		if( !Engine.Window )
 			glfwTerminate();
 
-		glewExperimental=GL_TRUE;
+		glfwMakeContextCurrent(Engine.Window);
+
 		GLenum GLEW_Error = glewInit(); 
 
 		if (GLEW_Error != GLEW_OK) 
@@ -133,15 +131,10 @@ namespace TE
 		glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,MVP.SetMat16());
 		*/
 
-
-		glm::vec3 Rotate;
-		Rotate.x = 100; Rotate.y = 0; Rotate.z = 0;
+		ShitCam.Update();
 
 		glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.1f, 100.f);
-		glm::mat4 ViewTranslate = glm::translate( glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -5));
-		glm::mat4 ViewRotateX = glm::rotate(ViewTranslate,Rotate.y, glm::vec3(-1.0f, 0.0f, 0.0f));
-
-		glm::mat4 View = glm::rotate(ViewRotateX,Rotate.x, glm::vec3(0.0f, 1.0f, 0.0f));
+		glm::mat4 View = ShitCam.getCamMatrix();
 		glm::mat4 Model = glm::scale(glm::mat4(1.0f), glm::vec3(0.5f));
 		glm::mat4 MVP = Projection * View * Model;
 
@@ -149,6 +142,7 @@ namespace TE
 		glUniformMatrix4fv(LocationMVP, 1,GL_FALSE,glm::value_ptr(MVP) );
 
 	}
+
 	void CRender::Draw()
 	{
 		PreDraw();
@@ -171,7 +165,8 @@ namespace TE
 		//S.Draw();
 
 
-		glfwSwapBuffers();
+		glfwSwapBuffers(Engine.Window);
+		glfwPollEvents();
 
 
 

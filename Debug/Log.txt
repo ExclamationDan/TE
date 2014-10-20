@@ -1,0 +1,21 @@
+[Oct|18 - 11:18PM] Engine: Mainloop started.
+
+[Oct|18 - 11:18PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:18PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:18PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:18PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:18PM] Shader: Program success.
+[Oct|18 - 11:18PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:18PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:18PM] Engine: Mainloop stopped.
+
+[Oct|18 - 11:18PM] Render: Module destructed.
+
+[Oct|18 - 11:18PM] Resource: Module destructed.
+
+[Oct|18 - 11:18PM] Console: Module destructed.
+
+[Oct|18 - 11:18PM] Engine: Module destructed.
+

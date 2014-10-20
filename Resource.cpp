@@ -1,4 +1,7 @@
 //File: Resource.cpp
+
+
+
 #include "Resource.h"
 #include "Engine.h"
 
@@ -97,6 +100,11 @@ namespace TE
 	GLuint CResource::LoadTexture(std::string Name)
 	{		
 
+		Module_Log("Texture loading is currently unavailable!");
+
+		return -1;
+
+		/*
 		//std::cout << "Path: " << AliasGet(Path::Materials) << "\n\n\n\n\n";
 		std::string Path = AliasAdd(Path::Materials,Name);
 		auto Find = Textures.find(Path);
@@ -142,6 +150,7 @@ namespace TE
 			return Find->second;
 		}
 
+		*/
 	}
 
 	/*

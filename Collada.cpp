@@ -1,7 +1,8 @@
 //File:	Collada.cpp
+
 #include "Collada.h"
-#include "GL\glew.h"
-#include "GL\glfw.h"
+
+
 #include <list>
 #include <vector>
 #include "Utility.h"
@@ -117,7 +118,7 @@ namespace TE
 		}
 
 		// Prevent spitting out errors if the method started itself
-		if (Subprocess = false)
+		if (Subprocess == false)
 		{
 			Utility::Log("Node: Query Failed, no child nodes named "+Name);
 		}
@@ -170,7 +171,7 @@ namespace TE
 		}
 
 		// Prevent spitting out errors if the method started itself
-		if (Subprocess = false)
+		if (Subprocess == false)
 		{
 			std::cout << "GetAnyKey: Attribute Any Query Failed: No child keys named "<<Name.c_str() <<std::endl;
 		}

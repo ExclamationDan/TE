@@ -77,7 +77,9 @@ bool CTGA::Load(char* filename)
 	for (int imageIdx = 0; imageIdx < imageSize; imageIdx += colorMode)
 	{
 		colorSwap = imageData[imageIdx];
+#pragma warning(suppress: 6385)
 		imageData[imageIdx] = imageData[imageIdx + 2];
+#pragma warning(suppress: 6386)
 		imageData[imageIdx + 2] = colorSwap;
 	}
 

@@ -1,5 +1,8 @@
 #pragma once
+
+
 #include "EngineModule.h"
+#include "GL_31.h"
 
 namespace TE
 {
@@ -16,7 +19,7 @@ namespace TE
 		CRender		*Render;
 		CResource	*Resource;
 		CConsole	*Console;
-
+		GLFWwindow	*Window;
 
 		void MainLoop_Start	();
 		void MainLoop_Stop	();

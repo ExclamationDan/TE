@@ -3,12 +3,18 @@
 //Programmer:	Daniel Martin 3/19/2013 
 
 #pragma once
+
+
+#include "GL_31.h"
+#include "TinyXML\tinyxml2.h"
+
 #include <iostream>
 #include <list>
-//#include "Model.h"
-#include "GL_31.h"
 
-#include "TinyXML\tinyxml2.h"
+
+
+
+
 using namespace tinyxml2;
 
 

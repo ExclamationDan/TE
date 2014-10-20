@@ -3,9 +3,9 @@
 //Programmer:	Daniel Martin 4/20/2013
 
 #pragma once
+
 #include <iostream>
-#include "GL/glew.h"
-#include "GL/glfw.h"
+#include "GL_31.h"
 
 namespace TE
 {

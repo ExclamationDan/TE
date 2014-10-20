@@ -1,7 +1,13 @@
 #pragma once
-#include <iostream>
+
+
+#include "GL_31.h"
 #include "EngineModule.h"
 #include "Shader.h"
+#include <iostream>
+
+
+
 
 namespace TE
 {
@@ -19,8 +25,8 @@ namespace TE
 		void Window_Begin();
 		void Window_End();
 		void UseShader(GLuint Shader);
-		void PreDraw();
-		void Draw();
+		inline void PreDraw();
+		inline void Draw();
 
 		void Module_Poll();
 	};

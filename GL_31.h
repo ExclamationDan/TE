@@ -3,14 +3,17 @@
 // Programmer: Daniel Martin 8/24/2013
 #pragma once
 
+
+
 #include "GL\glew.h"
+#include "GL\glfw.h"
 #include "glm\glm.hpp"
+#include "Utility.h"
 
 #include <iostream>
 #include <vector>
 
 
-#include "Utility.h"
 //using namespace glm;
 
 namespace TE

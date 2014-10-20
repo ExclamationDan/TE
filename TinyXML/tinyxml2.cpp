@@ -436,6 +436,7 @@ char* XMLDocument::Identify( char* p, XMLNode** node )
 	}
 	else {
 		returnNode = new (textPool.Alloc()) XMLText( this );
+#pragma warning(suppress: 6011)
 		returnNode->memPool = &textPool;
 		p = start;	// Back it up, all the text counts.
 	}
@@ -1098,6 +1099,7 @@ XMLAttribute* XMLElement::FindOrCreateAttribute( const char* name )
 	}
 	if ( !attrib ) {
 		attrib = new (document->attributePool.Alloc() ) XMLAttribute();
+#pragma warning(suppress: 6011)
 		attrib->memPool = &document->attributePool;
 		if ( last ) {
 			last->next = attrib;
@@ -1146,6 +1148,7 @@ char* XMLElement::ParseAttributes( char* p )
 		// attribute.
 		if ( XMLUtil::IsAlpha( *p ) ) {
 			XMLAttribute* attrib = new (document->attributePool.Alloc() ) XMLAttribute();
+#pragma warning(suppress: 6011)
 			attrib->memPool = &document->attributePool;
 
 			p = attrib->ParseDeep( p, document->ProcessEntities() );
@@ -1315,6 +1318,7 @@ void XMLDocument::InitDocument()
 XMLElement* XMLDocument::NewElement( const char* name )
 {
 	XMLElement* ele = new (elementPool.Alloc()) XMLElement( this );
+#pragma warning(suppress: 6011)
 	ele->memPool = &elementPool;
 	ele->SetName( name );
 	return ele;
@@ -1324,6 +1328,7 @@ XMLElement* XMLDocument::NewElement( const char* name )
 XMLComment* XMLDocument::NewComment( const char* str )
 {
 	XMLComment* comment = new (commentPool.Alloc()) XMLComment( this );
+#pragma warning(suppress: 6011)
 	comment->memPool = &commentPool;
 	comment->SetValue( str );
 	return comment;
@@ -1333,6 +1338,7 @@ XMLComment* XMLDocument::NewComment( const char* str )
 XMLText* XMLDocument::NewText( const char* str )
 {
 	XMLText* text = new (textPool.Alloc()) XMLText( this );
+#pragma warning(suppress: 6011)
 	text->memPool = &textPool;
 	text->SetValue( str );
 	return text;
@@ -1342,6 +1348,7 @@ XMLText* XMLDocument::NewText( const char* str )
 XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
 {
 	XMLDeclaration* dec = new (commentPool.Alloc()) XMLDeclaration( this );
+#pragma warning(suppress: 6011)
 	dec->memPool = &commentPool;
 	dec->SetValue( str ? str : "xml version=\"1.0\" encoding=\"UTF-8\"" );
 	return dec;
@@ -1351,6 +1358,7 @@ XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
 XMLUnknown* XMLDocument::NewUnknown( const char* str )
 {
 	XMLUnknown* unk = new (commentPool.Alloc()) XMLUnknown( this );
+#pragma warning(suppress: 6011)
 	unk->memPool = &commentPool;
 	unk->SetValue( str );
 	return unk;

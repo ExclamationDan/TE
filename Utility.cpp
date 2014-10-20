@@ -21,7 +21,7 @@ namespace TE
 
 			time (&rawtime);
 			timeinfo = localtime (&rawtime);
-			strftime (buffer,80,"[%b|%d - %I:%M%p] ",timeinfo);
+			strftime (buffer,50,"[%b|%d - %I:%M%p] ",timeinfo);
 
 
 			std::ofstream File;

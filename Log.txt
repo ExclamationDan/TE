@@ -671,3 +671,713 @@ Fragment shader uses varying vTexCoord but vertex shader does not write to it.
 
 [Sep|10 - 01:06PM] Engine: Module destructed.
 
+[Oct|18 - 11:12PM] Engine: Mainloop started.
+
+[Oct|18 - 11:12PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:12PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:12PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:12PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:12PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:12PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:12PM] Shader: Program success.
+[Oct|18 - 11:12PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:12PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:14PM] Engine: Mainloop started.
+
+[Oct|18 - 11:14PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:14PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:14PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:14PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:14PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:14PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:14PM] Shader: Program success.
+[Oct|18 - 11:14PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:14PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:14PM] Engine: Mainloop stopped.
+
+[Oct|18 - 11:14PM] Render: Module destructed.
+
+[Oct|18 - 11:14PM] Resource: Module destructed.
+
+[Oct|18 - 11:14PM] Console: Module destructed.
+
+[Oct|18 - 11:14PM] Engine: Module destructed.
+
+[Oct|18 - 11:14PM] Engine: Mainloop started.
+
+[Oct|18 - 11:14PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:14PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:14PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:14PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:14PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:14PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:14PM] Shader: Program success.
+[Oct|18 - 11:14PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:14PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:14PM] Engine: Mainloop stopped.
+
+[Oct|18 - 11:14PM] Render: Module destructed.
+
+[Oct|18 - 11:14PM] Resource: Module destructed.
+
+[Oct|18 - 11:14PM] Console: Module destructed.
+
+[Oct|18 - 11:14PM] Engine: Module destructed.
+
+[Oct|18 - 11:15PM] Engine: Mainloop started.
+
+[Oct|18 - 11:15PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:15PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:15PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:15PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:15PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:15PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:15PM] Shader: Program success.
+[Oct|18 - 11:15PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:15PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:15PM] Engine: Mainloop stopped.
+
+[Oct|18 - 11:15PM] Render: Module destructed.
+
+[Oct|18 - 11:15PM] Resource: Module destructed.
+
+[Oct|18 - 11:15PM] Console: Module destructed.
+
+[Oct|18 - 11:15PM] Engine: Module destructed.
+
+[Oct|18 - 11:15PM] Engine: Mainloop started.
+
+[Oct|18 - 11:15PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:15PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:15PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:15PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:15PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:15PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:15PM] Shader: Program success.
+[Oct|18 - 11:15PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:15PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Release/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:15PM] Engine: Mainloop stopped.
+
+[Oct|18 - 11:15PM] Render: Module destructed.
+
+[Oct|18 - 11:15PM] Resource: Module destructed.
+
+[Oct|18 - 11:15PM] Console: Module destructed.
+
+[Oct|18 - 11:15PM] Engine: Module destructed.
+
+[Oct|18 - 11:18PM] Engine: Mainloop started.
+
+[Oct|18 - 11:18PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:18PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:18PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:18PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:18PM] Shader: Program success.
+[Oct|18 - 11:18PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:18PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:18PM] Engine: Mainloop started.
+
+[Oct|18 - 11:18PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:18PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:18PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:18PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:18PM] Shader: Program success.
+[Oct|18 - 11:18PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:18PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:18PM] Engine: Mainloop started.
+
+[Oct|18 - 11:18PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:18PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:18PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:18PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:18PM] Shader: Program success.
+[Oct|18 - 11:18PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:18PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:19PM] Engine: Mainloop started.
+
+[Oct|18 - 11:19PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:19PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:19PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:19PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:19PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:19PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:19PM] Shader: Program success.
+[Oct|18 - 11:19PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:19PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:22PM] Engine: Mainloop started.
+
+[Oct|18 - 11:22PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:22PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:22PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:22PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:22PM] Shader: Program success.
+[Oct|18 - 11:22PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:22PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:23PM] Engine: Mainloop started.
+
+[Oct|18 - 11:23PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:23PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:23PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:23PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:23PM] Shader: Program success.
+[Oct|18 - 11:23PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:23PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:26PM] Engine: Mainloop started.
+
+[Oct|18 - 11:26PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:26PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:26PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:26PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:26PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:26PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:26PM] Shader: Program success.
+[Oct|18 - 11:26PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:26PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|18 - 11:27PM] Engine: Mainloop started.
+
+[Oct|18 - 11:27PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|18 - 11:27PM] Resource: Virtual Poll() function undefined!
+[Oct|18 - 11:27PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|18 - 11:27PM] Shader: [Shader.Vertex] Load complete.
+[Oct|18 - 11:27PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|18 - 11:27PM] Shader: [Shader.Fragment] Load complete.
+[Oct|18 - 11:27PM] Shader: Program success.
+[Oct|18 - 11:27PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|18 - 11:27PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:08PM] Engine: Mainloop started.
+
+[Oct|19 - 01:08PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:08PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:08PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:08PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:08PM] Shader: Program success.
+[Oct|19 - 01:08PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:08PM] Engine: Mainloop started.
+
+[Oct|19 - 01:08PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:08PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:08PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:08PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:08PM] Shader: Program success.
+[Oct|19 - 01:08PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:18PM] Engine: Mainloop started.
+
+[Oct|19 - 01:18PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:18PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:18PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:18PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:18PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:18PM] Shader: Program success.
+[Oct|19 - 01:18PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:18PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:19PM] Engine: Mainloop started.
+
+[Oct|19 - 01:19PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:19PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:19PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:19PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:19PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:19PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:19PM] Shader: Program success.
+[Oct|19 - 01:19PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:19PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:20PM] Engine: Mainloop started.
+
+[Oct|19 - 01:20PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:20PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:20PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:20PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:20PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:20PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:20PM] Shader: Program success.
+[Oct|19 - 01:20PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:20PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:20PM] Engine: Mainloop started.
+
+[Oct|19 - 01:20PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:20PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:20PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:20PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:20PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:20PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:20PM] Shader: Program success.
+[Oct|19 - 01:20PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:20PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:21PM] Engine: Mainloop started.
+
+[Oct|19 - 01:21PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:21PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:21PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:21PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:21PM] Shader: Program success.
+[Oct|19 - 01:21PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:21PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:21PM] Engine: Mainloop started.
+
+[Oct|19 - 01:21PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:21PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:21PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:21PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:21PM] Shader: Program success.
+[Oct|19 - 01:21PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:21PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:21PM] Engine: Mainloop started.
+
+[Oct|19 - 01:21PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:21PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:21PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:21PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:21PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:21PM] Shader: Program success.
+[Oct|19 - 01:21PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:21PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:22PM] Engine: Mainloop started.
+
+[Oct|19 - 01:22PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:22PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:22PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:22PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:22PM] Shader: Program success.
+[Oct|19 - 01:22PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:22PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:22PM] Engine: Mainloop started.
+
+[Oct|19 - 01:22PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:22PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:22PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:22PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:22PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:22PM] Shader: Program success.
+[Oct|19 - 01:22PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:22PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:23PM] Engine: Mainloop started.
+
+[Oct|19 - 01:23PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:23PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:23PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:23PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:23PM] Shader: Program success.
+[Oct|19 - 01:23PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:23PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:23PM] Engine: Mainloop started.
+
+[Oct|19 - 01:23PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:23PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:23PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:23PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:23PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:23PM] Shader: Program success.
+[Oct|19 - 01:23PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:23PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:24PM] Engine: Mainloop started.
+
+[Oct|19 - 01:24PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:24PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:24PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:24PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:24PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:24PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:24PM] Shader: Program success.
+[Oct|19 - 01:24PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:24PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:24PM] Engine: Mainloop started.
+
+[Oct|19 - 01:24PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:24PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:24PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:24PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:24PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:24PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:24PM] Shader: Program success.
+[Oct|19 - 01:24PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:24PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:25PM] Engine: Mainloop started.
+
+[Oct|19 - 01:25PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:25PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:25PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:25PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:25PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:25PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:25PM] Shader: Program success.
+[Oct|19 - 01:25PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:25PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:50PM] Engine: Mainloop started.
+
+[Oct|19 - 01:50PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:50PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:50PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:50PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:50PM] Shader: Program success.
+[Oct|19 - 01:50PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:50PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:50PM] Engine: Mainloop started.
+
+[Oct|19 - 01:50PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:50PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:50PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:50PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:50PM] Shader: Program success.
+[Oct|19 - 01:50PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:50PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:51PM] Engine: Mainloop started.
+
+[Oct|19 - 01:51PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:51PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:51PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:51PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:51PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:51PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:51PM] Shader: Program success.
+[Oct|19 - 01:51PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:51PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:51PM] Engine: Mainloop stopped.
+
+[Oct|19 - 01:51PM] Render: Module destructed.
+
+[Oct|19 - 01:51PM] Resource: Module destructed.
+
+[Oct|19 - 01:51PM] Console: Module destructed.
+
+[Oct|19 - 01:51PM] Engine: Module destructed.
+
+[Oct|19 - 01:51PM] Engine: Mainloop started.
+
+[Oct|19 - 01:51PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:51PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:51PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:51PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:51PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:51PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:51PM] Shader: Program success.
+[Oct|19 - 01:51PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:51PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:52PM] Engine: Mainloop started.
+
+[Oct|19 - 01:52PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:52PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:52PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:52PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:52PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:52PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:52PM] Shader: Program success.
+[Oct|19 - 01:52PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:52PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:52PM] Engine: Mainloop started.
+
+[Oct|19 - 01:52PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:52PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:52PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:52PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:52PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:52PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:52PM] Shader: Program success.
+[Oct|19 - 01:52PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:52PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:53PM] Engine: Mainloop started.
+
+[Oct|19 - 01:53PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:53PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:53PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:53PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:53PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:53PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:53PM] Shader: Program success.
+[Oct|19 - 01:53PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:53PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:53PM] Engine: Mainloop started.
+
+[Oct|19 - 01:53PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:53PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:53PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:53PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:53PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:53PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:53PM] Shader: Program success.
+[Oct|19 - 01:53PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:53PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:58PM] Engine: Mainloop started.
+
+[Oct|19 - 01:58PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:58PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:58PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:58PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:58PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:58PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:58PM] Shader: Program success.
+[Oct|19 - 01:58PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:58PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:59PM] Engine: Mainloop started.
+
+[Oct|19 - 01:59PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:59PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:59PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:59PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:59PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:59PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:59PM] Shader: Program success.
+[Oct|19 - 01:59PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:59PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 01:59PM] Engine: Mainloop started.
+
+[Oct|19 - 01:59PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 01:59PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 01:59PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 01:59PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 01:59PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 01:59PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 01:59PM] Shader: Program success.
+[Oct|19 - 01:59PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 01:59PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:00PM] Engine: Mainloop started.
+
+[Oct|19 - 02:00PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:00PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:00PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:00PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:00PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:00PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:00PM] Shader: Program success.
+[Oct|19 - 02:00PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:00PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:01PM] Engine: Mainloop started.
+
+[Oct|19 - 02:01PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:01PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:01PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:01PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:01PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:01PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:01PM] Shader: Program success.
+[Oct|19 - 02:01PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:01PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:01PM] Engine: Mainloop started.
+
+[Oct|19 - 02:01PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:01PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:01PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:01PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:01PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:01PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:01PM] Shader: Program success.
+[Oct|19 - 02:01PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:01PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:02PM] Engine: Mainloop started.
+
+[Oct|19 - 02:02PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:02PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:02PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:02PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:02PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:02PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:02PM] Shader: Program success.
+[Oct|19 - 02:02PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:02PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:03PM] Engine: Mainloop started.
+
+[Oct|19 - 02:03PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:03PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:03PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:03PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:03PM] Shader: Program success.
+[Oct|19 - 02:03PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:03PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:03PM] Engine: Mainloop started.
+
+[Oct|19 - 02:03PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:03PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:03PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:03PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:03PM] Shader: Program success.
+[Oct|19 - 02:03PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:03PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:06PM] Engine: Mainloop started.
+
+[Oct|19 - 02:06PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:06PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:06PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:06PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:06PM] Shader: Program success.
+[Oct|19 - 02:06PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:06PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:06PM] Engine: Mainloop started.
+
+[Oct|19 - 02:06PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:06PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:06PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:06PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:06PM] Shader: Program success.
+[Oct|19 - 02:06PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:06PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:06PM] Engine: Mainloop started.
+
+[Oct|19 - 02:06PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:06PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:06PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:06PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:06PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:06PM] Shader: Program success.
+[Oct|19 - 02:06PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:06PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:07PM] Engine: Mainloop started.
+
+[Oct|19 - 02:07PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:07PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:07PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:07PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:07PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:07PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:07PM] Shader: Program success.
+[Oct|19 - 02:07PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:07PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:07PM] Engine: Mainloop started.
+
+[Oct|19 - 02:07PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:07PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:07PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:07PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:07PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:07PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:07PM] Shader: Program success.
+[Oct|19 - 02:07PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:07PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:08PM] Engine: Mainloop started.
+
+[Oct|19 - 02:08PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:08PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:08PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:08PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:08PM] Shader: Program success.
+[Oct|19 - 02:08PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:08PM] Engine: Mainloop started.
+
+[Oct|19 - 02:08PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:08PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:08PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:08PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:08PM] Shader: Program success.
+[Oct|19 - 02:08PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:29PM] Engine: Mainloop started.
+
+[Oct|19 - 02:29PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:29PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:29PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:29PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:29PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:29PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:29PM] Shader: Program success.
+[Oct|19 - 02:29PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:29PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:44PM] Engine: Mainloop started.
+
+[Oct|19 - 02:44PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:44PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:44PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:44PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:44PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:44PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:44PM] Shader: Program success.
+[Oct|19 - 02:44PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:44PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:45PM] Engine: Mainloop started.
+
+[Oct|19 - 02:45PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:45PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:45PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:45PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:45PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:45PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:45PM] Shader: Program success.
+[Oct|19 - 02:45PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:45PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 02:50PM] Engine: Mainloop started.
+
+[Oct|19 - 02:50PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 02:50PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 02:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 02:50PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 02:50PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 02:50PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 02:50PM] Shader: Program success.
+[Oct|19 - 02:50PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 02:50PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 10:56PM] Engine: Mainloop started.
+
+[Oct|19 - 10:56PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 10:56PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 10:56PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 10:56PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 10:56PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 10:56PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 10:56PM] Shader: Program success.
+[Oct|19 - 10:56PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 10:56PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 11:03PM] Engine: Mainloop started.
+
+[Oct|19 - 11:03PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 11:03PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 11:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 11:03PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 11:03PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 11:03PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 11:03PM] Shader: Program success.
+[Oct|19 - 11:03PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 11:03PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
+[Oct|19 - 11:08PM] Engine: Mainloop started.
+
+[Oct|19 - 11:08PM] Render: OpenGL version: 4.4.0 NVIDIA 344.11
+[Oct|19 - 11:08PM] Resource: Virtual Poll() function undefined!
+[Oct|19 - 11:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Vertex'
+[Oct|19 - 11:08PM] Shader: [Shader.Vertex] Load complete.
+[Oct|19 - 11:08PM] CResource: Allocating new [Shader] CResource: 'Shader.Fragment'
+[Oct|19 - 11:08PM] Shader: [Shader.Fragment] Load complete.
+[Oct|19 - 11:08PM] Shader: Program success.
+[Oct|19 - 11:08PM] CResource: Allocating new [Model] CResource: 'box.dae'
+[Oct|19 - 11:08PM] Collada: Loadeded [C:/Users/Danny/Documents/GitHub/TE/Debug/Data/Models/box.dae] for parsing successfully.
